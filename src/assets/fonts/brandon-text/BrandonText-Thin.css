@@ -1,0 +1,12 @@
+/* Webfont: BrandonText-Thin */@font-face {
+    font-family: 'BrandonTextThin';
+    src: url('BrandonText-Thin.eot'); /* IE9 Compat Modes */
+    src: url('BrandonText-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BrandonText-Thin.woff') format('woff'), /* Modern Browsers */
+         url('BrandonText-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BrandonText-Thin.svg#BrandonText-Thin') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

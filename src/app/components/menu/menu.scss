@@ -1,0 +1,26 @@
+vertical-menu {
+	display: flex;
+	flex-flow: row wrap;
+	width: 20rem;
+	@include p($spacing-large 0 $spacing-default $spacing-large);
+	.logo {
+		@include p($spacing-small, bottom);
+	}
+	.vertical.menu-bar {
+		li {
+			flex-flow: column nowrap;
+		}
+		li li {
+			flex: 1 0 auto;
+			> a {
+				padding-top: $menubar-item-padding * (2/3);
+				padding-bottom: $menubar-item-padding * (2/3);
+				padding-left: $menubar-item-padding / (2/3);
+				font-size: 0.8rem;
+			}
+		}
+	}
+	nav + .menu-bar {
+		align-self: flex-end;
+	}
+}

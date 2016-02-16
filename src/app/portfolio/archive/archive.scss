@@ -1,0 +1,53 @@
+.lax-item {
+	height: 100%;
+	overflow: visible;
+	+ * {
+		margin-top:$spacing-giant;
+	}
+}
+
+.lax-container {
+		//height: 70vh;
+	//	overflow: hidden;
+		position: relative;
+	backface-visibility: hidden;
+	a {
+		display: block;
+		//height: 100%;
+		position: relative;
+		backface-visibility: hidden;
+
+		img {
+			//opacity:0;
+		}
+	}
+}
+//
+//.lax-target {
+//
+//		display: block;
+//		position: absolute;
+//		backface-visibility: hidden;
+//		height: 120%;
+//		width: 100%;
+//		//top: 50%;
+//		top: 0;
+//		left: 50%;
+//		transform: translate3d(-50%,0,0);
+//}
+//.lax-image {
+//	height: 100%;
+//	width: 100%;
+//	background-size: cover;
+//	background-position: center center;
+//	background-repeat: no-repeat;
+//	&.cherub {
+//		background-image: url('../assets/images/archive/cherub-sm.jpg');
+//	}
+//	&.classic-1 {
+//		background-image: url('../assets/images/archive/classic-sm.jpg');
+//	}
+//	&.classic-2 {
+//		background-image: url('../assets/images/archive/classic-alt-sm.jpg');
+//	}
+//}

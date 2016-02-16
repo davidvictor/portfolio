@@ -1,15 +1,289 @@
-/**
- *  If you want to override some foundation settings, you have to change values here.
- *  The list of settings values are listed here bower_components/foundation/scss/foundation/_settings.scss
- */
-$topbar-bg-color: #5AADBB;
+//  FOUNDATION FOR APPS SETTINGS
+//  ----------------------------
+//
+//  Table of Contents:
+//
+//  1.  CSS Exports
+//  2.  Global Styles
+//  3.  Breakpoints
+//  4.  Typography
+//  5.  Grid
+//  6.  Button
+//  7.  Accordion
+//  8.  Action Sheet
+//  9.  Block List
+//  10. Button Group
+//  11. Card
+//  12. Extras
+//  13. Forms
+//  14. Iconic
+//  15. Label
+//  16. Menu Bar
+//  17. Modal
+//  18. Motion UI
+//  19. Notification
+//  20. Off-canvas
+//  21. Panel
+//  22. Popup
+//  23. Switch
+//  24. Tabs
+//  25. Title Bar
+@import "../../bower_components/foundation-apps/scss/helpers/functions";
 
-/**
- *  The import of foundation is made manually because there is still no links of the
- *  sass version in their bower.json...
- */
-@import '../../bower_components/foundation/scss/foundation';
+$include-css: (
+								accordion: true,
+								action-sheet: true,
+								block-list: true,
+								button: true,
+								button-group: true,
+								card: true,
+								coloring: true,
+								extras: true,
+								forms: true,
+								grid: true,
+								iconic: false,
+								label: true,
+								badge: true,
+								list: true,
+								menu-bar: true,
+								modal: true,
+								motion: true,
+								notification: true,
+								off-canvas: true,
+								panel: true,
+								popup: true,
+								switch: true,
+								tabs: true,
+								title-bar: true,
+								typography: false,
+								utilities: true,
+							);
 
+$im-breakpoints: (
+									 small: rem-calc(0),
+									 medium: rem-calc(640),
+									 large: rem-calc(1200),
+									 xlarge: rem-calc(1440),
+									 xxlarge: rem-calc(1920),
+								 );
+
+$global-radius: 3px;
+$global-rounded: 1000px;
+$global-padding: 1rem;
+$global-spacing: rem-calc(15);
+
+// TYPOGRAPHY
+$default-font-stack: 'Avenir, Helvetica, Arial, sans-serif';
+
+$brandon: 'brandon', #{$default-font-stack};
+$eames: 'eames', #{$default-font-stack};
+//$proxima: 'proxima-nova', #{$font-stack-fallback};
+//$sf: 'SanFranciscoText', #{$font-stack-fallback};
+
+// Add typefaces here.
+// Add weight and style details too.
+// ! Set cap height to set to the baseline.
+$bodytype: (
+						 font-family: $brandon,
+						 regular: 300,
+						 bold: 500,
+						 italic: italic,
+						 cap-height: 0.66
+					 );
+
+$headingtype: (
+								font-family: $eames,
+								regular: 300,
+								bold: 700,
+								cap-height: 0.65
+							);
+
+$monospacetype: (
+									font-family: 'Menlo, monospace',
+									regular: 400,
+									cap-height: 0.68
+								);
+
+$faces: (
+					"eamesB": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-Bold",
+						weight: 700,
+						style: normal
+					),
+					"eamesBI": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-BoldItalic",
+						weight: 700,
+						style: italic
+					),
+					"eamesR": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-Regular",
+						weight: 300,
+						style: normal
+					),
+					"eamesI": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-Italic",
+						weight: 300,
+						style: italic
+					),
+					"eamesT": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-Thin",
+						weight: 100,
+						style: normal
+					),
+					"eamesTI": (
+						family: "eames",
+						url: "../assets/fonts/eames/EamesCenturyModern-ThinItalic",
+						weight: 100,
+						style: italic
+					),
+					"brandonB": (
+						family: "brandon",
+						url: "../assets/fonts/brandon-text/BrandonText-Bold",
+						weight: 700,
+						style: normal
+					),
+					"brandonR": (
+						family: "brandon",
+						url: "../assets/fonts/brandon-text/BrandonText-Regular",
+						weight: 300,
+						style: normal
+					),
+					"brandonT": (
+						family: "brandon",
+						url: "../assets/fonts/brandon-text/BrandonText-Thin",
+						weight: 100,
+						style: normal
+					)
+				);
+$font-formats: eot woff ttf;
+
+// 16. Menu Bar
+// - - - - - - - - - - - - - - -
+
+$menubar-fontsize: 1rem;
+$menubar-background: #ffffff;
+$menubar-background-hover: smartscale($menubar-background, 7%);
+$menubar-background-active: $menubar-background-hover;
+$menubar-color: isitlight($menubar-background);
+$menubar-color-hover: $menubar-color;
+$menubar-color-active: $menubar-color-hover;
+
+$menubar-item-padding: 1rem;
+$menubar-icon-size: 25px;
+$menubar-icon-spacing: $menubar-item-padding;
+
+// 17. Modal
+// - - - - - - - - - - - - - - -
+
+$modal-background: #ffffff;
+$modal-border: 0;
+$modal-radius: 0px;
+$modal-shadow: none;
+$modal-zindex: 1000;
+$modal-sizes: (
+								tiny: 300px,
+								small: 500px,
+								medium: 600px,
+								large: 800px,
+							);
+
+$modal-overlay-class: 'modal-overlay';
+$modal-overlay-background: rgba(#333, 0.7);
+
+// 18. Motion UI
+// - - - - - - - - - - - - - - -
+
+// Classes to use when triggering in/out animations
+$motion-class: (
+								 in: "ng-enter",
+								 out: "ng-leave",
+							 );
+$motion-class-active: (
+												in: "ng-enter-active",
+												out: "ng-leave-active",
+											);
+$motion-class-stagger: (
+												 in: "ng-enter-stagger",
+												 out: "ng-leave-stagger",
+											 );
+$motion-class-showhide: (
+													in: "ng-hide-remove",
+													out: "ng-hide-add",
+												);
+$motion-class-showhide-active: (
+																 in: "ng-hide-remove-active",
+																 out: "ng-hide-add-active",
+															 );
+
+// Set if movement-based transitions should also fade the element in and out
+//$motion-slide-and-fade: true;
+//$motion-hinge-and-fade: true;
+//$motion-scale-and-fade: true;
+//$motion-spin-and-fade: true;
+
+// Default speed for transitions and animations
+// $motion-duration-default: 500ms;
+
+// Slow and fast modifiders
+// $motion-duration-slow: 750ms;
+// $motion-duration-fast: 250ms;
+// $motion-stagger-duration-default: 150ms;
+// $motion-stagger-duration-short: 50ms;
+// $motion-stagger-duration-long: 300ms;
+
+// Default timing function for transitions and animations
+//$motion-timing-default: ease;
+
+// Built-in and custom easing functions
+// Every item in this map becomes a CSS class
+$motion-timings: (
+									 linear: linear,
+									 ease: ease,
+									 easeIn: ease-in,
+									 easeOut: ease-out,
+									 easeInOut: ease-in-out,
+									 bounceIn: cubic-bezier(0.485, 0.155, 0.240, 1.245),
+									 bounceOut: cubic-bezier(0.485, 0.155, 0.515, 0.845),
+									 bounceInOut: cubic-bezier(0.760, -0.245, 0.240, 1.245),
+									 ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530),
+									 ease-in-cubic: cubic-bezier(0.550, 0.055, 0.675, 0.190),
+									 ease-in-quart: cubic-bezier(0.895, 0.030, 0.685, 0.220),
+									 ease-in-quint: cubic-bezier(0.755, 0.050, 0.855, 0.060),
+									 ease-in-sine: cubic-bezier(0.470, 0.000, 0.745, 0.715),
+									 ease-in-expo: cubic-bezier(0.950, 0.050, 0.795, 0.035),
+									 ease-in-circ: cubic-bezier(0.600, 0.040, 0.980, 0.335),
+									 ease-in-back: cubic-bezier(0.600, -0.280, 0.735, 0.045),
+									 ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940),
+									 ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000),
+									 ease-out-quart: cubic-bezier(0.165, 0.840, 0.440, 1.000),
+									 ease-out-quint: cubic-bezier(0.230, 1.000, 0.320, 1.000),
+									 ease-out-sine: cubic-bezier(0.390, 0.575, 0.565, 1.000),
+									 ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000),
+									 ease-out-circ: cubic-bezier(0.075, 0.820, 0.165, 1.000),
+									 ease-out-back: cubic-bezier(0.175, 0.885, 0.320, 1.275),
+									 ease-in-out-quad: cubic-bezier(0.455, 0.030, 0.515, 0.955),
+									 ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000),
+									 ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000),
+									 ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000),
+									 ease-in-out-sine: cubic-bezier(0.445, 0.050, 0.550, 0.950),
+									 ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000),
+									 ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.150, 0.860),
+									 ease-in-out-back: cubic-bezier(0.680, -0.550, 0.265, 1.550)
+								 );
+
+// Default delay for all transitions and animations
+// $motion-delay-default: 0;
+// Short and long delay modifiers
+// $motion-delay-short: 300ms;
+// $motion-delay-long: 700ms;
+
+@import '../../bower_components/foundation-apps/scss/foundation';
+@import "../../bower_components/sassy-lists/dist/_SassyLists.scss";
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
  *  sass dependencies when defined in the bower.json of your dependencies
@@ -17,24 +291,163 @@ $topbar-bg-color: #5AADBB;
 // bower:scss
 // endbower
 
+@each $font, $face in $faces {
+	@include font-face(
+			map-get($face, family),
+			map-get($face, url),
+			map-get($face, weight),
+			map-get($face, style),
+			$font-formats);
+}
+
+html,
+body,
+section,
+button,
+input,
+select,
+fieldset,
+article,
+a,
+span,
+div {
+	-webkit-font-smoothing:      antialiased;
+	-moz-osx-font-smoothing:     grayscale;
+	text-rendering:              optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+	@include rootsize();
+}
+
+body {
+	font-family:           unquote(map-get($bodytype, font-family));
+	font-style:            normal;
+	font-weight:           map-get($bodytype, regular);
+	line-height:           1.5;
+	font-feature-settings: 'kern' 1, 'lnum' 1, 'liga' 1;
+	color:                 $body-color;
+	@include roar-fontsize(zeta, all);
+}
+
+a {
+	text-decoration: none;
+	cursor:          pointer;
+}
+
+p {
+	@include sassline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+p.small {
+	@include sassline($fontsize: theta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+p.tiny {
+	@include sassline($fontsize: iota, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+}
+
+#{$all-headings} {
+	font-family:    unquote(map-get($headingtype, font-family));
+	font-style:     italic;
+	font-weight:    map-get($headingtype, regular);
+	text-transform: uppercase;
+	span.bold {
+		font-weight: 700;
+	}
+}
+
+// Heading level 1.
+h1,
+.alpha {
+	@include sassline($fontsize: alpha, $font: $headingtype, $lineheight: 3, $below: 1, $breakpoint: all);
+}
+
+// Heading level 2.
+h2,
+.beta {
+	@include sassline(beta, $headingtype, 3, 1, all);
+}
+
+// Heading level 3.
+h3,
+.gamma {
+	@include sassline(gamma, $headingtype, 3, 1, all);
+}
+
+// Heading level 4.
+h4,
+.delta {
+	@include sassline(delta, $headingtype, 2, 0, all);
+}
+
+// Heading level 5.
+h5,
+.epsilon {
+	@include sassline(epsilon, $headingtype, 2, 0, all);
+}
+
+// Heading level 6.
+h6,
+.zeta {
+	@include sassline(zeta, $headingtype, 2, 0, all);
+}
+
+h6.small {
+	@include sassline(theta, $headingtype, 2, 0, all);
+}
+
+h6.tiny {
+	@include sassline(iota, $headingtype, 2, 0, all);
+}
+
+@include generate-box-utility-classes();
+
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+	margin:     0.2rem 0;
+	background: #cccccc;
+	color:      #000000;
+	padding:    0.2rem 0;
 }
 
 .panel {
-  margin-top: 50px;
+	margin-top: 5rem;
 }
 
 .th {
-  width: 100%;
-  height: 200px;
+	width:  100%;
+	height: 200px;
 
-  img.right {
-    width: 50px;
-  }
+	img.right {
+		width: 50px;
+	}
+}
+
+.pageScaleIn {
+	@include scale(
+		$dir: in,
+		$from: 1.01,
+		$to: 1,
+		$fade: true,
+		$duration: 0.1s,
+		$timing: ease-in-out-cubic,
+		$delay: 0.05s
+	);
+}
+
+.pageScaleOut {
+	@include scale(
+		$dir: out,
+		$from: 1,
+		$to: .99,
+		$fade: true,
+		$duration: 0.1s,
+		$timing: ease-in-out-cubic,
+		$delay: 0s
+	);
 }
 
 /**

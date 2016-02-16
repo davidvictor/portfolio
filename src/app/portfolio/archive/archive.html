@@ -1,0 +1,26 @@
+<div class="grid-block wrap small-12 noscroll">
+
+	<div class="grid-block small-12 noscroll lax-item" ng-repeat="item in archive.data">
+		<div class="grid-content p-h-0 noscroll" sm-scene="tween-{{item.id}}" duration="200%" offset="0" trigger-hook="1">
+			<div class="lax-container" chocolat instance="instance">
+				<a href="assets/images/archive/{{item.images[0].img}}" class="chocolat-image" >
+					<img src="assets/images/archive/{{item.images[0].thumb}}" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!--
+	<div class="grid-block small-12 lax-item">
+		<div class="grid-content">
+			<div class="lax-container" sm-scene="tween1" duration="200%" offset="0" trigger-hook="1">
+				<div class="lax-target" sm-tween="tween1" vars="{y: '0px',scale:1.01, force3D:true}">
+					<div class="lax-image cherub"> </div>
+				</div>
+				<a href="assets/images/archive/cherub.jpg" class="chocolat-image"></a>
+			</div>
+		</div>
+	</div>
+	-->

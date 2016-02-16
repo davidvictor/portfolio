@@ -1,0 +1,12 @@
+/* Webfont: BrandonText-Italic */@font-face {
+    font-family: 'BrandonTextRegular';
+    src: url('BrandonText-Italic.eot'); /* IE9 Compat Modes */
+    src: url('BrandonText-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BrandonText-Italic.woff') format('woff'), /* Modern Browsers */
+         url('BrandonText-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BrandonText-Italic.svg#BrandonText-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

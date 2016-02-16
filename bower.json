@@ -11,19 +11,42 @@
     "jquery": "~2.1.4",
     "angular-resource": "~1.4.2",
     "angular-ui-router": "~0.2.15",
-    "foundation": "~5.5.2",
-    "angular-foundation": "~0.6.0",
     "malarkey": "yuanqing/malarkey#~1.3.1",
     "angular-toastr": "~1.5.0",
     "moment": "~2.10.6",
     "animate.css": "~3.4.0",
-    "angular": "~1.4.2"
+    "angular": "~1.5.0",
+    "angular-scroll-magic": "git://github.com/davidvictor/angular-scroll-magic.git#master",
+    "ng-chocolat": "*",
+    "foundation-apps": "^1.2.0",
+    "devices.css": "*",
+    "include-media": "git://github.com/davidvictor/include-media.git#master",
+    "include-media-spread": "git://github.com/davidvictor/include-media-spread.git#master",
+    "sass-maps-plus": "git@github.com:lunelson/sass-maps-plus.git#master",
+    "sassy-lists": "git@github.com:at-import/SassyLists.git#master",
+    "mathsass": "^0.9.5",
+    "modular-scale": "^2.1.1",
+    "sass-reset": "git://github.com/davidvictor/sass-reset.git#master",
+    "sass-helpers": "git://github.com/davidvictor/sass-helpers.git#master",
+    "sass-typography": "git://github.com/davidvictor/sass-typography.git#master",
+    "sass-utility-variables": "git://github.com/davidvictor/sass-utility-variables.git#master"
+
   },
   "devDependencies": {
     "angular-mocks": "~1.4.2"
   },
   "resolutions": {
     "jquery": "~2.1.4",
-    "angular": "~1.4.2"
+    "angular": "~1.4.2",
+    "sass-maps-plus": "e4d32a1dc2"
+  },
+  "overrides": {
+    "ng-chocolat": {
+      "main": ["./src/ng-chocolat.js"]
+    },
+    "scrollmagic": {
+      "main": ["./scrollmagic/minified/ScrollMagic.min.js",
+        "./scrollmagic/minified/plugins/animation.gsap.min.js"]
+    }
   }
 }

@@ -1,0 +1,12 @@
+/* Webfont: EamesCenturyModern-Italic */@font-face {
+    font-family: 'EamesCenturyModernRegular';
+    src: url('EamesCenturyModern-Italic.eot'); /* IE9 Compat Modes */
+    src: url('EamesCenturyModern-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('EamesCenturyModern-Italic.woff') format('woff'), /* Modern Browsers */
+         url('EamesCenturyModern-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('EamesCenturyModern-Italic.svg#EamesCenturyModern-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

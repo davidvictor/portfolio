@@ -1,0 +1,12 @@
+/* Webfont: BrandonText-Black */@font-face {
+    font-family: 'BrandonTextBlack';
+    src: url('BrandonText-Black.eot'); /* IE9 Compat Modes */
+    src: url('BrandonText-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BrandonText-Black.woff') format('woff'), /* Modern Browsers */
+         url('BrandonText-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BrandonText-Black.svg#BrandonText-Black') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

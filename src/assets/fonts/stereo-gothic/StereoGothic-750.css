@@ -1,0 +1,12 @@
+/* Webfont: StereoGothic-750 */@font-face {
+    font-family: 'StereoGothic750';
+    src: url('StereoGothic-750.eot'); /* IE9 Compat Modes */
+    src: url('StereoGothic-750.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('StereoGothic-750.woff') format('woff'), /* Modern Browsers */
+         url('StereoGothic-750.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('StereoGothic-750.svg#StereoGothic-750') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
