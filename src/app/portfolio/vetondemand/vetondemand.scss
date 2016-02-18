@@ -1,0 +1,128 @@
+.section-block{
+	//&:first-child {
+		min-height: 100vh;
+		&.block-small {
+			min-height: 65vh;
+		}
+	//}
+	& + * {
+		margin-top:4rem;
+	}
+}
+
+.vetondemand[ui-view] {
+	#{$headings-list} {
+	//	color: $vod-purple;
+		&.section-heading{
+			color: $black;
+			font-family:    unquote(map-get($bodytype, font-family));
+			font-style: normal;
+			font-weight: 700;
+			margin-bottom: $spacing-small;
+			padding-bottom: $spacing-small;
+			position: relative;
+			&:after {
+				content:          '';
+				position:         absolute;
+				bottom:           0;
+				left:             50%;
+				width:            50%;
+				height:           0.1rem;
+				background-color: $gold;
+				transform: translateX(-50%);
+				//opacity:          0.2;
+				transition:       opacity 200ms $ease-out-cubic;
+			}
+			+ {
+				#{$headings-list} {
+					text-transform: none;
+				}
+			}
+		}
+	}
+}
+
+@mixin phone-render($a,$h:false) {
+	@if $h {
+		width: $a * .34;
+		height: $a;
+	}	@else {
+		width: $a;
+		height: $a * 2.96;
+	}
+}
+
+
+
+[class*='render-'] {
+	display: block;
+	position: relative;
+	backface-visibility: hidden;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+
+.render {
+	&.small {
+		@include phone-render(5rem);
+	}
+	&-medium {
+		@include phone-render(8rem);
+	}
+	&-large {
+		@include phone-render(12rem);
+	}
+}
+
+
+[class*='render-'] {
+	&.home {
+		&.gold {
+			&.front {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-gold-front.png');
+			}
+			&.left {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-gold-left.png');
+			}
+			&.right {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-gold-right.png');
+			}
+		}
+		&.grey {
+			&.front {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-grey-front.png');
+			}
+			&.left {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-grey-left.png');
+			}
+			&.right {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-grey-right.png');
+			}
+		}
+		&.rose {
+			&.front {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-rose-front.png');
+			}
+			&.left {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-rose-left.png');
+			}
+			&.right {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-rose-right.png');
+			}
+		}
+		&.silver {
+			&.front {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-silver-front.png');
+			}
+			&.left {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-silver-left.png');
+			}
+			&.right {
+				background-image: url('../assets/images/vetondemand/renders-v2/home-silver-right.png');
+			}
+		}
+	}
+}

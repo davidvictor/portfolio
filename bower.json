@@ -11,9 +11,7 @@
     "jquery": "~2.1.4",
     "angular-resource": "~1.4.2",
     "angular-ui-router": "~0.2.15",
-    "malarkey": "yuanqing/malarkey#~1.3.1",
-    "angular-toastr": "~1.5.0",
-    "moment": "~2.10.6",
+    "angular-scroll": "^1.0.0",
     "animate.css": "~3.4.0",
     "angular": "~1.5.0",
     "angular-scroll-magic": "git://github.com/davidvictor/angular-scroll-magic.git#master",
@@ -42,11 +40,15 @@
   },
   "overrides": {
     "ng-chocolat": {
-      "main": ["./src/ng-chocolat.js"]
+      "main": [
+        "./src/ng-chocolat.js"
+      ]
     },
     "scrollmagic": {
-      "main": ["./scrollmagic/minified/ScrollMagic.min.js",
-        "./scrollmagic/minified/plugins/animation.gsap.min.js"]
+      "main": [
+        "./scrollmagic/minified/ScrollMagic.min.js",
+        "./scrollmagic/minified/plugins/animation.gsap.min.js"
+      ]
     }
   }
 }

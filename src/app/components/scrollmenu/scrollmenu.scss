@@ -1,0 +1,29 @@
+scroll-menu {
+	position: fixed;
+	top:      $spacing-large * 2;
+	left:     $menu-width;
+	z-index:  10;
+	width:    10rem;
+	.vertical.menu-bar {
+		background: transparent;
+		li {
+			flex-flow: column nowrap;
+			a {
+				@include roar-fontsize('theta', all);
+				transition: all 200ms $ease-out-back;
+			}
+			&:hover,
+			&.active {
+				> a {
+					transform: translateX(.1rem);
+				}
+			}
+
+			&.active {
+				a {
+					color: $gold;
+				}
+			}
+		}
+	}
+}

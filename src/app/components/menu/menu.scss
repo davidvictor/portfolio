@@ -1,26 +1,79 @@
 vertical-menu {
-	display: flex;
+	display:   flex;
 	flex-flow: row wrap;
-	width: 20rem;
+	width:     $menu-width;
 	@include p($spacing-large 0 $spacing-default $spacing-large);
 	.logo {
 		@include p($spacing-small, bottom);
+		a {
+			font-family:           unquote(map-get($headingtype, font-family));
+			font-style:            italic;
+			font-weight:           map-get($bodytype, regular);
+			text-transform: uppercase;
+			line-height: 1;
+			span span {
+				font-weight: 700;
+			}
+			@include roar-fontsize('epsilon', all);
+			span.line-break {
+				@include media('>large') {
+					display: none;
+				}
+			}
+		}
 	}
 	.vertical.menu-bar {
 		li {
 			flex-flow: column nowrap;
+			 > a {
+				 @include roar-fontsize('eta', all);
+				 font-weight: 500;
+				 text-transform: uppercase;
+				 letter-spacing: 0.08rem;
+			}
+			&.active {
+				a {
+					color: $gold;
+				}
+				&:hover {
+					> a {
+						transform: translateX(0);
+					}
+				}
+			}
+			a {
+				transition: all 200ms $ease-out-back;
+			}
+			&:hover {
+				> a {
+					transform: translateX(.1rem);
+				}
+			}
 		}
 		li li {
 			flex: 1 0 auto;
 			> a {
-				padding-top: $menubar-item-padding * (2/3);
+				padding-top:    $menubar-item-padding * (2/3);
 				padding-bottom: $menubar-item-padding * (2/3);
-				padding-left: $menubar-item-padding / (2/3);
-				font-size: 0.8rem;
+				@include roar-fontsize('theta', all);
+				font-weight: 300;
+				text-transform: none;
+				letter-spacing: 0;
+				span {
+					padding-left: $menubar-item-padding / (2/3);
+				}
 			}
 		}
 	}
-	nav + .menu-bar {
+	nav + * {
 		align-self: flex-end;
+	}
+	.icon-menu {
+		a {
+			padding: .5rem;
+			svg {
+				margin: 0 !important;
+			}
+		}
 	}
 }

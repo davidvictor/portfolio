@@ -21,11 +21,7 @@ export function routerConfig($stateProvider, $urlRouterProvider) {
 		})
 		.state('work', {
 			url: '/work',
-			templateUrl: 'app/pages/work/work.html',
-			animation: {
-				enter: 'pageScaleIn',
-				leave: 'pageScaleOut'
-			}
+			templateUrl: 'app/pages/work/work.html'
 		})
 		.state('vetondemand', {
 			url: '/work/vetondemand',

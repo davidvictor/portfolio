@@ -1,27 +1,96 @@
 .lax-item {
-	height: 100%;
-	overflow: visible;
+	height:      100vh;
+	overflow:    hidden;
+	align-items: center;
+	justify-content: center;
 	+ * {
-		margin-top:$spacing-giant;
+		margin-top: $spacing-giant;
 	}
+
 }
 
 .lax-container {
-		//height: 70vh;
-	//	overflow: hidden;
-		position: relative;
+	width: 50vw;
+	height: 50vw * .56;
+	flex: 0 0 auto;
+	padding: 0 !important;
+	margin-bottom:3rem;
+	//@include p($spacing-giant*2, horizontal);
+	//@include media('<large') {
+	//	@include p($spacing-default*2, horizontal);
+	//}
+	//@include media('>giant') {
+	//	height: 90vh;
+	//}
+	position:            relative;
 	backface-visibility: hidden;
-	a {
-		display: block;
-		//height: 100%;
-		position: relative;
+	.lax-wrapper {
+		height:              100%;
+		overflow:            hidden;
 		backface-visibility: hidden;
-
+		position:            relative;
+	}
+	a {
+		will-change:         transform;
+		display:             none;
+		overflow:            hidden;
+		position:            absolute;
+		top:                 0;
+		left:                0;
+		transform:           translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		height:              110%;
+		width:               100%;
+		&:first-child {
+			display: block;
+		}
+		&.cherub {
+			img {
+				top: 5%;
+			}
+		}
 		img {
-			//opacity:0;
+			display:             inline-block;
+			position:            absolute;
+			top:                 0;
+			height:              auto;
+			//max-width:           none;
+			//min-width: 100%;
+			left:                50%;
+			transform:           translate3d(-50%, 0, 0);
+			backface-visibility: hidden;
+			//height: 100%;
+			//width: auto;
+			//max-width: none;
 		}
 	}
 }
+
+.lax-deets {
+	position:  absolute;
+	bottom:    0;
+	left: 0;
+	margin:    0 !important;
+	transform: translate3d(0, 100%, 0);
+	width:     100%;
+
+	.grid-block {
+		margin: 0;
+	}
+	.archive-label {
+		//text-transform: uppercase;
+		//font-weight: 700;
+		letter-spacing: .5px;
+		line-height:    1.5rem;
+		margin-top:     .5rem;
+	}
+	.archive-data {
+		font-weight:    700;
+		letter-spacing: 1px;
+		line-height:    0.7rem;
+	}
+}
+
 //
 //.lax-target {
 //

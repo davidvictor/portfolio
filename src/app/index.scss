@@ -63,14 +63,19 @@ $im-breakpoints: (
 									 small: rem-calc(0),
 									 medium: rem-calc(640),
 									 large: rem-calc(1200),
-									 xlarge: rem-calc(1440),
-									 xxlarge: rem-calc(1920),
+									 huge: rem-calc(1440),
+									 giant: rem-calc(1920),
 								 );
 
 $global-radius: 3px;
 $global-rounded: 1000px;
 $global-padding: 1rem;
 $global-spacing: rem-calc(15);
+
+$black: hsla(345, 6%, 13%, 1);
+$gold: hsla(27, 28%, 51%, 1);
+$vod-purple: #49287a;
+$vod-yellow: #efa343;
 
 // TYPOGRAPHY
 $default-font-stack: 'Avenir, Helvetica, Arial, sans-serif';
@@ -147,6 +152,12 @@ $faces: (
 						weight: 700,
 						style: normal
 					),
+					"brandonM": (
+						family: "brandon",
+						url: "../assets/fonts/brandon-text/BrandonText-Medium",
+						weight: 500,
+						style: normal
+					),
 					"brandonR": (
 						family: "brandon",
 						url: "../assets/fonts/brandon-text/BrandonText-Regular",
@@ -162,12 +173,14 @@ $faces: (
 				);
 $font-formats: eot woff ttf;
 
+$menu-width: 16rem;
+
 // 16. Menu Bar
 // - - - - - - - - - - - - - - -
 
 $menubar-fontsize: 1rem;
 $menubar-background: #ffffff;
-$menubar-background-hover: smartscale($menubar-background, 7%);
+$menubar-background-hover: #ffffff;
 $menubar-background-active: $menubar-background-hover;
 $menubar-color: isitlight($menubar-background);
 $menubar-color-hover: $menubar-color;
@@ -221,10 +234,10 @@ $motion-class-showhide-active: (
 															 );
 
 // Set if movement-based transitions should also fade the element in and out
-//$motion-slide-and-fade: true;
-//$motion-hinge-and-fade: true;
-//$motion-scale-and-fade: true;
-//$motion-spin-and-fade: true;
+$motion-slide-and-fade: false;
+$motion-hinge-and-fade: false;
+$motion-scale-and-fade: false;
+$motion-spin-and-fade: false;
 
 // Default speed for transitions and animations
 // $motion-duration-default: 500ms;
@@ -282,6 +295,27 @@ $motion-timings: (
 // $motion-delay-short: 300ms;
 // $motion-delay-long: 700ms;
 
+@mixin scale(
+	$dir: in,
+	$from: 1.5,
+	$to: 1,
+	$fade: $motion-scale-and-fade,
+	$duration: $motion-duration-default,
+	$timing: $motion-timing-default,
+	$delay: $motion-delay-default
+) {
+	@include transition-start($dir) {
+		@include transition-basics($duration, $timing, $delay);
+		transition-property: transform, opacity;
+		transform:           scale($from);
+		@if $fade { opacity: if($dir == in, 0, 1) }
+	}
+	@include transition-end($dir) {
+		transform: scale($to);
+		@if $fade { opacity: if($dir == in, 1, 0) }
+	}
+}
+
 @import '../../bower_components/foundation-apps/scss/foundation';
 @import "../../bower_components/sassy-lists/dist/_SassyLists.scss";
 /**
@@ -338,16 +372,36 @@ a {
 	cursor:          pointer;
 }
 
+p a {
+	position: relative;
+	&:after {
+		content:          '';
+		position:         absolute;
+		bottom:           0.1rem;
+		left:             0;
+		width:            100%;
+		height:           0.3rem;
+		background-color: $gold;
+		opacity:          0.4;
+		transition:       opacity 200ms $ease-out-cubic;
+	}
+	&:hover {
+		&:after {
+			opacity: 0.8;
+		}
+	}
+}
+
 p {
 	@include sassline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
 }
 
 p.small {
-	@include sassline($fontsize: theta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+	@include sassline($fontsize: eta, $font: $bodytype, $lineheight: 1.5, $below: 2, $breakpoint: all);
 }
 
 p.tiny {
-	@include sassline($fontsize: iota, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
+	@include sassline($fontsize: theta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
 }
 
 #{$all-headings} {
@@ -355,6 +409,7 @@ p.tiny {
 	font-style:     italic;
 	font-weight:    map-get($headingtype, regular);
 	text-transform: uppercase;
+	letter-spacing: .1rem;
 	span.bold {
 		font-weight: 700;
 	}
@@ -381,7 +436,7 @@ h3,
 // Heading level 4.
 h4,
 .delta {
-	@include sassline(delta, $headingtype, 2, 0, all);
+	@include sassline(delta, $headingtype, 3, 0, all);
 }
 
 // Heading level 5.
@@ -406,23 +461,62 @@ h6.tiny {
 
 @include generate-box-utility-classes();
 
-.browsehappy {
-	margin:     0.2rem 0;
-	background: #cccccc;
-	color:      #000000;
-	padding:    0.2rem 0;
+.scroll-y {
+	overflow-y:                 scroll;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style:         -ms-autohiding-scrollbar;
 }
 
-.panel {
-	margin-top: 5rem;
+.scroll-x {
+	overflow-x:                 scroll;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style:         -ms-autohiding-scrollbar;
 }
 
-.th {
-	width:  100%;
-	height: 200px;
+.self-stretch.self-stretch.self-stretch {
+	align-self: stretch;
+}
 
-	img.right {
-		width: 50px;
+.self-center.self-center.self-center {
+	align-self: center;
+}
+
+.content-center.content-center.content-center {
+	align-content: center;
+}
+
+.justify-start.justify-start.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.items-start.items-start.items-start {
+	align-items: flex-start;
+}
+
+.items-center.items-center.items-center {
+	align-items: center;
+}
+
+[sm-tween] {
+	will-change:         transform opacity;
+	backface-visibility: hidden;
+	&.fade-in {
+		opacity: 0;
+	}
+	* {
+		#{$headings-list},
+		p, a, img {
+			backface-visibility: hidden;
+			transform:           translate3d(0, 0, 0);
+		}
 	}
 }
 
@@ -432,9 +526,9 @@ h6.tiny {
 		$from: 1.01,
 		$to: 1,
 		$fade: true,
-		$duration: 0.1s,
+		$duration: .1s,
 		$timing: ease-in-out-cubic,
-		$delay: 0.05s
+		$delay: .1s
 	);
 }
 
@@ -450,6 +544,140 @@ h6.tiny {
 	);
 }
 
+.chocolat-overlay {
+	background-color: #ffffff;
+	opacity:          0.95;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+.browsehappy {
+	margin:     0.2rem 0;
+	background: #cccccc;
+	color:      #000000;
+	padding:    0.2rem 0;
+}
+
+.stack-logo {
+	display: block;
+	padding-bottom: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	&.angular {
+		background-image: url('../assets/images/stack/angular.png');
+	}
+
+	&.aws-cloud-front {
+		background-image: url('../assets/images/stack/aws-cloud-front.png');
+	}
+
+	&.aws-ec2 {
+		background-image: url('../assets/images/stack/aws-ec2.png');
+	}
+
+	&.aws-elastic-load-balancing {
+		background-image: url('../assets/images/stack/aws-elastic-load-balancing.png');
+	}
+
+	&.aws-glacier {
+		background-image: url('../assets/images/stack/aws-glacier.png');
+	}
+
+	&.aws-rds {
+		background-image: url('../assets/images/stack/aws-rds.png');
+	}
+
+	&.aws-route-53 {
+		background-image: url('../assets/images/stack/aws-route-53.png');
+	}
+
+	&.aws-s3 {
+		background-image: url('../assets/images/stack/aws-s3.png');
+	}
+
+	&.aws-ses {
+		background-image: url('../assets/images/stack/aws-ses.png');
+	}
+
+	&.aws-sqs {
+		background-image: url('../assets/images/stack/aws-sqs.png');
+	}
+
+	&.bower {
+		background-image: url('../assets/images/stack/bower.png');
+	}
+
+	&.cloudflare {
+		background-image: url('../assets/images/stack/cloudflare.png');
+	}
+
+	&.dotnet {
+		background-image: url('../assets/images/stack/dotnet.png');
+	}
+
+	&.git {
+		background-image: url('../assets/images/stack/git.png');
+	}
+
+	&.github {
+		background-image: url('../assets/images/stack/github.png');
+	}
+
+	&.googleanalytics {
+		background-image: url('../assets/images/stack/googleanalytics.png');
+	}
+
+	&.grunt {
+		background-image: url('../assets/images/stack/grunt.png');
+	}
+
+	&.gulp {
+		background-image: url('../assets/images/stack/gulp.png');
+	}
+
+	&.handlebars {
+		background-image: url('../assets/images/stack/handlebars.png');
+	}
+
+	&.ironio {
+		background-image: url('../assets/images/stack/ironio.png');
+	}
+
+	&.jquery {
+		background-image: url('../assets/images/stack/jquery.png');
+	}
+
+	&.mandril {
+		background-image: url('../assets/images/stack/mandril.png');
+	}
+
+	&.mysql {
+		background-image: url('../assets/images/stack/mysql.png');
+	}
+
+	&.newrelic {
+		background-image: url('../assets/images/stack/newrelic.png');
+	}
+
+	&.node {
+		background-image: url('../assets/images/stack/node.png');
+	}
+
+	&.react {
+		background-image: url('../assets/images/stack/react.png');
+	}
+
+	&.sass {
+		background-image: url('../assets/images/stack/sass.png');
+	}
+
+	&.stripe {
+		background-image: url('../assets/images/stack/stripe.png');
+	}
+}
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

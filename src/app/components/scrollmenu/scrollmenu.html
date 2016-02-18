@@ -1,0 +1,12 @@
+<nav class="scroll-menu grid-block small-12">
+	<div class="grid-content collapse">
+		<ul class="vertical menu-bar" du-scroll-container="site-container" >
+			<li ng-repeat="item in sm.config" du-scrollspy="{{item.location}}">
+				<a du-smooth-scroll href="#{{item.location}}" >
+					<span>{{item.label}}</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+

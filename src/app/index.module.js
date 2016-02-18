@@ -1,30 +1,26 @@
-/* global malarkey:false, moment:false */
 
 
+
+//import * as roar from '../app/helpers/easing';
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
+import { MenuDirective } from '../app/components/menu/menu.directive';
+import { ScrollMenuDirective } from '../app/components/scrollmenu/scrollmenu.directive';
 import { MainController } from './main/main.controller';
-import { WorkController } from './pages/work/work.controller';
-import { ContactController } from './pages/contact/contact.controller';
 import { VetOnDemandController } from './portfolio/vetondemand/vetondemand.controller';
 import { ArchiveController } from './portfolio/archive/archive.controller';
-import { GithubContributorService } from '../app/components/githubContributor/githubContributor.service';
-import { MenuDirective } from '../app/components/menu/menu.directive';
-import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
+import { ContactController } from './pages/contact/contact.controller';
 
 
-angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting','foundation.dynamicRouting.animations', 'toastr', 'chocolat','dv.scrollMagic'])
-	.constant('malarkey', malarkey)
-	.constant('moment', moment)
+
+angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting','foundation.dynamicRouting.animations', 'chocolat','dv.scrollMagic','duScroll'])
 	.config(config)
 	.config(routerConfig)
 	.run(runBlock)
-	.service('githubContributor', GithubContributorService)
 	.controller('MainController', MainController)
-	.controller('WorkController', WorkController)
-	.controller('ContactController', ContactController)
 	.controller('VetOnDemandController', VetOnDemandController)
 	.controller('ArchiveController', ArchiveController)
+	.controller('ContactController', ContactController)
 	.directive('verticalMenu', MenuDirective)
-	.directive('acmeMalarkey', MalarkeyDirective);
+	.directive('scrollMenu', ScrollMenuDirective);

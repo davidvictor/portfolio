@@ -1,13 +1,19 @@
-<nav class="vertical-menu grid-block">
-	<div class="grid-content">
+<nav class="vertical-menu grid-block small-12">
+	<div class="grid-content collapse">
 		<div class="logo">
-			<a ui-sref="home"><h5>David<span class="bold">Victor</span></h5></a>
+			<a ui-sref="home"><span>David<span class="line-break"><br/></span><span class="bold">Victor</span></span></a>
 		</div>
 		<ul class="vertical menu-bar">
-			<li ng-class="{'active' : item.active}"
+			<li ui-sref-active="active"
 			    ng-repeat="item in vm.config.data track by $index">
 
-				<a ng-href ng-click="vm.toggle($event, item)">
+				<a ui-sref="{{item.location}}" ng-click="vm.toggle($event, item)" ng-if="vm.getRoute(item)">
+					<span>{{::item.label}}</span>
+					<i class="fa pull-right"
+					   ng-class="{'fa-chevron-left' : !item.active, 'fa-chevron-down' : item.active}"
+					   ng-if="vm.hasChildren(item)"></i>
+				</a>
+				<a ng-click="vm.toggle($event, item)" ng-if="!vm.getRoute(item)">
 					<span>{{::item.label}}</span>
 					<i class="fa pull-right"
 					   ng-class="{'fa-chevron-left' : !item.active, 'fa-chevron-down' : item.active}"
@@ -15,8 +21,8 @@
 				</a>
 				<ul class="vertical menu-bar sbm-collapse-{{::vm.getId($index)}}"
 				    ng-if="vm.hasChildren(item) && item.active">
-					<li ng-repeat="child in item.children track by $index">
-						<a ng-href ng-click="vm.toggle($event, child);">
+					<li ng-repeat="child in item.children track by $index" ui-sref-active="active">
+						<a  ui-sref="{{child.location}}" ng-click="vm.toggle($event, child);">
 							<span>{{::child.label}}</span>
 						</a>
 					</li>
@@ -28,7 +34,11 @@
 	</div>
 </nav>
 
-<ul class="icon-top menu-bar">
-	<li><a href="#"><img zf-iconic="" data-src="assets/img/iconic/social.svg" data-type="linkedin" size="small" class="iconic-color-primary"></a></li>
-	<li><a href="#"><img zf-iconic=""data-src="assets/img/iconic/social.svg" data-type="github" size="small" class="iconic-color-primary"></a></li>
-</ul>
+<div class="icon-menu grid-block shrink">
+	<div class="grid-content collapse">
+		<ul class="icon-top menu-bar">
+			<li><a href="https://www.linkedin.com/in/dvictor" target="_blank"><img zf-iconic="" data-src="assets/img/iconic/social.svg" data-type="linkedin" size="small" class="iconic-color-primary"></a></li>
+			<li><a href="https://github.com/davidvictor" target="_blank"><img zf-iconic="" data-src="assets/img/iconic/social.svg" data-type="github" size="small" class="iconic-color-primary"></a></li>
+		</ul>
+	</div>
+</div>
