@@ -1,37 +1,35 @@
-.section-block{
+.section-block {
 	//&:first-child {
+	&.block-fullscreen {
 		min-height: 100vh;
-		&.block-small {
-			min-height: 65vh;
-		}
+	}
+	//@include p($spacing-small,vertical);
+	&.block-small {
+		min-height: 50vh;
+	}
 	//}
 	& + * {
-		margin-top:4rem;
+		margin-top: 4rem;
 	}
 }
 
 .vetondemand[ui-view] {
 	#{$headings-list} {
-	//	color: $vod-purple;
-		&.section-heading{
-			color: $black;
+		//color: $vod-purple;
+		&.section-heading {
+			color:          $black;
 			font-family:    unquote(map-get($bodytype, font-family));
-			font-style: normal;
-			font-weight: 700;
-			margin-bottom: $spacing-small;
-			padding-bottom: $spacing-small;
-			position: relative;
+			font-style:     normal;
+			font-weight:    700;
+			position:       relative;
 			&:after {
 				content:          '';
 				position:         absolute;
 				bottom:           0;
 				left:             50%;
-				width:            50%;
-				height:           0.1rem;
+				height:           1px;
 				background-color: $gold;
-				transform: translateX(-50%);
-				//opacity:          0.2;
-				transition:       opacity 200ms $ease-out-cubic;
+				transform:        translateX(-50%);
 			}
 			+ {
 				#{$headings-list} {
@@ -40,30 +38,44 @@
 			}
 		}
 	}
+	h4 {
+		&.section-heading {
+			margin-bottom:  $spacing-small;
+			padding-bottom: $spacing-small;
+			&:after {
+				width:            50%;
+			}
+		}
+	}
+	h6 {
+		&.section-heading {
+			margin-bottom:  $spacing-tiny;
+			padding-bottom: $spacing-tiny;
+			&:after {
+				width:            20%;
+			}
+		}
+	}
 }
 
 @mixin phone-render($a,$h:false) {
 	@if $h {
-		width: $a * .34;
+		width:  $a * .34;
 		height: $a;
-	}	@else {
-		width: $a;
+	} @else {
+		width:  $a;
 		height: $a * 2.96;
 	}
 }
 
-
-
 [class*='render-'] {
-	display: block;
-	position: relative;
+	display:             block;
+	position:            relative;
 	backface-visibility: hidden;
-	background-size: contain;
+	background-size:     contain;
 	background-position: center center;
-	background-repeat: no-repeat;
+	background-repeat:   no-repeat;
 }
-
-
 
 .render {
 	&.small {
@@ -77,6 +89,100 @@
 	}
 }
 
+.hero-bg {
+	will-change:         transform;
+	position:            absolute;
+	top:                 0;
+	left:                0;
+	bottom:              0;
+	right:               0;
+	height:              100%;
+	width:               100%;
+	transform:           translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	background-size:     cover;
+	background-position: center center;
+	background-repeat:   no-repeat;
+}
+
+#branding {
+	.logo-mark {
+		height:              5rem;
+		width:               5rem;
+		background-size:     contain;
+		background-position: center center;
+		background-repeat:   no-repeat;
+		background-image:    url('../assets/images/vetondemand/brand/logo-mark-white.svg');
+	}
+	.hero-bg {
+		background-image: url('../assets/images/vetondemand/brand/overlay-brand-primary.png');
+	}
+	.block-fullscreen {
+		.hero-bg {
+			height: 110vh;
+			top:    auto;
+		}
+	}
+}
+
+@mixin color-card($color) {
+	.color-preview {
+		background-color: $color;
+	}
+	.color-shades {
+		background-image: linear-gradient(to left,
+			mix($color, white, 20%) 0%,
+			mix($color, white, 20%) 20%,
+			mix($color, white, 40%) 21%,
+			mix($color, white, 40%) 40%,
+			mix($color, white, 60%) 41%,
+			mix($color, white, 60%) 60%,
+			mix($color, white, 80%) 61%,
+			mix($color, white, 80%) 80%,
+			mix($color, white, 90%) 81%,
+			mix($color, white, 90%) 100%
+
+											);
+	}
+}
+
+$vod-brand-colors: (
+										 purple:$vod-purple,
+										 gold:$vod-yellow,
+										 grey1:#EEEEEE,
+										 grey2:#d5d5d5,
+										 gunmetal:#353535
+									 );
+
+.color-card {
+	border-color: $black;
+	border-width: 1px;
+	.color-preview {
+		padding-bottom: 100%;
+	}
+	.color-shades {
+		height: 2rem;
+	}
+	@each $item, $color in $vod-brand-colors {
+		&.#{$item} {
+			@include color-card($color)
+		}
+	}
+}
+
+.photo-grid {
+	.grid-content {
+		//padding: 0;
+	}
+	&-item {
+		display: block;
+		backface-visibility: hidden;
+		background-size:     cover;
+		background-position: center center;
+		background-repeat:   no-repeat;
+		padding-bottom: 56%;
+	}
+}
 
 [class*='render-'] {
 	&.home {

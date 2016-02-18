@@ -26,14 +26,15 @@ class ScrollMenuController {
 		this.config = [
 			{
 				label: 'Overview',
-				location: 'overview',
-				callback: function () {
-					//$state.go('about');
-				}
+				location: 'overview'
 			},
 			{
-				label: 'Strategy',
-				location: 'strategy'
+				label: 'Research',
+				location: 'research'
+			},
+			{
+				label: 'Insight',
+				location: 'insight'
 			},
 			{
 				label: 'Branding',
@@ -52,7 +53,7 @@ class ScrollMenuController {
 				location: 'marketing'
 			}
 
-		]
+		];
 	}
 
 }

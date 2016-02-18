@@ -11,7 +11,7 @@
 
 <div class="grid-block wrap  small-12" id="overview">
 
-	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block block-fullscreen">
 		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
 
 			<div class="grid-content ">
@@ -152,13 +152,70 @@
     Branding
 <|-------------------------------------------------------------------------------->
 
-<div class="grid-block wrap  small-12" id="branding">
+<div class="grid-block wrap small-12" id="branding">
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block block-small">
 		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">
 			<div class="grid-content text-center fade-in">
-				<!--<p class="small uppercase m-t-t">Mission</p>-->
 				<h4 class="section-heading">Branding</h4>
 				<h6 class="fade-in">Every pet should have access to the care they deserve.</h6>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll noverflow section-block block-fullscreen" sm-scene="branding" duration="200%" offset="0" trigger-hook="1">
+		<div class="hero-bg" sm-tween="branding" vars="{y: '10%'}"></div>
+		<div class="grid-block noscroll align-center items-center section-container small-12">
+			<div class="grid-content text-center fade-in">
+				<!--<div class="logo-mark"></div>-->
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">
+			<div class="grid-content text-center fade-in">
+				<h6 class="section-heading">Color</h6>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-spaced items-center section-container small-12 medium-10 large-9">
+			<div class="grid-content" ng-repeat="color in vetondemand.colors track by $index">
+				<div class="color-card {{color.name}}">
+					<div class="color-preview "></div>
+					<div class="color-shades"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">
+			<div class="grid-content text-center fade-in">
+				<h6 class="section-heading">Type</h6>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll wrap align-spaced items-center section-container small-12 medium-12 large-9">
+			<div class="grid-content small-12 medium-6 large-5 m-b-m" ng-repeat="font in vetondemand.fonts track by $index">
+				<p class="small uppercase">{{font.name}} <span class="iota text-light">{{font.weight}}</span></p>
+				<div class="waterfall {{font.class}} ">
+					ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+					abcdefghijklmnopqrstuvwxyz<br/>
+					0123456789!@#$%^&*();:,.?
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">
+			<div class="grid-content text-center fade-in">
+				<h6 class="section-heading">Photo</h6>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block small-12 medium-10  noscroll wrap align-spaced items-center section-container photo-grid" chocolat config="vetondemand.config" instance="instance">
+			<div class="grid-content m-b-m {{photo.size}}" ng-repeat="photo in vetondemand.photos track by $index">
+				<a class="photo-grid-item chocolat-image {{photo.id}}" href="{{photo.src}}" style="background-image:url('{{photo.thumb}}')"></a>
 			</div>
 		</div>
 	</div>
@@ -193,12 +250,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+	<div class="grid-block align-center self-stretch small-12 noscroll  section-block">
 		<div class="grid-block wrap noscroll align-center items-center section-container small-10 medium-9 large-10">
 			<div class="grid-content small-6 medium-3 large-2" ng-repeat="logo in vetondemand.logos track by $index">
 				<span class="stack-logo {{logo.name}}"></span>
 			</div>
-
 		</div>
 	</div>
 </div>

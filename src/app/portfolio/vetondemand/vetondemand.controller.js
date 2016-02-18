@@ -2,40 +2,190 @@ export class VetOnDemandController {
 	constructor() {
 		'ngInject';
 
-		this.config = [
+		this.colors = [
 			{
-				label: 'Overview',
-				location: 'overview'
+				name: 'purple',
+				hex: '#49287a',
+				hsl: ['27','28%','51%']
 			},
 			{
-				label: 'Strategy',
-				location: 'overview'
+				name: 'gold',
+				hex: '#efa343',
+				hsl: ['27','28%','51%']
 			},
 			{
-				label: 'Branding',
-				location: 'overview'
+				name: 'grey1',
+				hex: '#ededed',
+				hsl: ['27','28%','51%']
 			},
 			{
-				label: 'Mobile',
-				location: 'overview'
+				name: 'grey2',
+				hex: '#bbbbbb',
+				hsl: ['27','28%','51%']
 			},
 			{
-				label: 'Web',
-				location: 'overview'
+				name: 'gunmetal',
+				hex: '#212121',
+				hsl: ['27','28%','51%']
+			}
+		];
+
+		this.photos = [
+			{
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
 			},
 			{
-				label: 'Marketing',
-				location: 'overview'
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
+			},
+			{
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
+			},
+			{
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
+			},
+			{
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
+			},
+			{
+				id: 'girl-window',
+				size: 'small-12 medium-6 large-4',
+				src: 'assets/images/archive/classic.jpg',
+				thumb: 'assets/images/archive/classic-sm.jpg'
+			}
+		];
+
+		this.fonts = [
+			{
+				name: 'Proxima Nova',
+				weight: 'Book',
+				class: 'proxima weight-300'
+			},
+			{
+				name: 'Proxima Nova',
+				weight: 'Semi-Bold',
+				class: 'proxima weight-600'
+			},
+			{
+				name: 'Gotham Rounded',
+				weight: 'Light',
+				class: 'gotham weight-300'
+			},
+			{
+				name: 'Gotham Rounded',
+				weight: 'Medium',
+				class: 'gotham weight-500'
 			}
 
 		];
-
 		this.logos = [
+			//{
+			//	name: 'angular',
+			//	desc: ''
+			//},
 			{
-				name: 'angular',
+				name: 'dotnet',
 				desc: ''
 			},
 
+			{
+				name: 'node',
+				desc: ''
+			},
+
+			{
+				name: 'react',
+				desc: ''
+			},
+			{
+				name: 'jquery',
+				desc: ''
+			},
+
+			{
+				name: 'sass',
+				desc: ''
+			},
+			{
+				name: 'bower',
+				desc: ''
+			},
+			{
+				name: 'grunt',
+				desc: ''
+			},
+			{
+				name: 'mysql',
+				desc: ''
+			},
+
+
+			{
+				name: 'git',
+				desc: ''
+			},
+
+			{
+				name: 'github',
+				desc: ''
+			},
+
+			{
+				name: 'googleanalytics',
+				desc: ''
+			},
+			{
+				name: 'cloudflare',
+				desc: ''
+			},
+
+
+			//{
+			//	name: 'gulp',
+			//	desc: ''
+			//},
+
+			{
+				name: 'handlebars',
+				desc: ''
+			},
+
+			{
+				name: 'ironio',
+				desc: ''
+			},
+
+
+			{
+				name: 'mandril',
+				desc: ''
+			},
+
+
+			{
+				name: 'newrelic',
+				desc: ''
+			},
+
+
+			{
+				name: 'stripe',
+				desc: ''
+			},
 			{
 				name: 'aws-cloud-front',
 				desc: ''
@@ -79,97 +229,28 @@ export class VetOnDemandController {
 			{
 				name: 'aws-sqs',
 				desc: ''
-			},
-
-			{
-				name: 'bower',
-				desc: ''
-			},
-
-			{
-				name: 'cloudflare',
-				desc: ''
-			},
-
-			{
-				name: 'dotnet',
-				desc: ''
-			},
-
-			{
-				name: 'git',
-				desc: ''
-			},
-
-			{
-				name: 'github',
-				desc: ''
-			},
-
-			{
-				name: 'googleanalytics',
-				desc: ''
-			},
-
-			{
-				name: 'grunt',
-				desc: ''
-			},
-
-			{
-				name: 'gulp',
-				desc: ''
-			},
-
-			{
-				name: 'handlebars',
-				desc: ''
-			},
-
-			{
-				name: 'ironio',
-				desc: ''
-			},
-
-			{
-				name: 'jquery',
-				desc: ''
-			},
-
-			{
-				name: 'mandril',
-				desc: ''
-			},
-
-			{
-				name: 'mysql',
-				desc: ''
-			},
-
-			{
-				name: 'newrelic',
-				desc: ''
-			},
-
-			{
-				name: 'node',
-				desc: ''
-			},
-
-			{
-				name: 'react',
-				desc: ''
-			},
-
-			{
-				name: 'sass',
-				desc: ''
-			},
-
-			{
-				name: 'stripe',
-				desc: ''
 			}
+
 		];
+
+		this.config = {
+			container: window,
+			initialZoomState: null,
+			imageSize: 'cover',
+			fullScreen: false,
+			loop: false,
+			linkImages: true,
+			duration: 300,
+			setTitle: '',
+			separator2: '/',
+			setIndex: 0,
+			firstImage: 0,
+			lastImage: false,
+			currentImage: false,
+			initialized: false,
+			timer: false,
+			timerDebounce: false
+		};
+
 	}
 }

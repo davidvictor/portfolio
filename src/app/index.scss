@@ -520,6 +520,10 @@ h6.tiny {
 	}
 }
 
+.noverflow {
+	overflow: hidden !important;
+}
+
 .pageScaleIn {
 	@include scale(
 		$dir: in,
