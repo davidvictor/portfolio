@@ -1,0 +1,12 @@
+/* Webfont: SanFranciscoText-Thin */@font-face {
+    font-family: 'SanFranciscoTextThin';
+    src: url('SanFranciscoText-Thin.eot'); /* IE9 Compat Modes */
+    src: url('SanFranciscoText-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('SanFranciscoText-Thin.woff') format('woff'), /* Modern Browsers */
+         url('SanFranciscoText-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('SanFranciscoText-Thin.svg#SanFranciscoText-Thin') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

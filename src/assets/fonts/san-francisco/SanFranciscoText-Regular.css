@@ -1,0 +1,12 @@
+/* Webfont: SanFranciscoText-Regular */@font-face {
+    font-family: 'SanFranciscoTextRegular';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/san-francisco/SanFranciscoText-Regular.eot'); /* IE9 Compat Modes */
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/san-francisco/SanFranciscoText-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('http://vod-global-assets.s3.amazonaws.com/webfonts/san-francisco/SanFranciscoText-Regular.woff') format('woff'), /* Modern Browsers */
+         url('http://vod-global-assets.s3.amazonaws.com/webfonts/san-francisco/SanFranciscoText-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('http://vod-global-assets.s3.amazonaws.com/webfonts/san-francisco/SanFranciscoText-Regular.svg#SanFranciscoText-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

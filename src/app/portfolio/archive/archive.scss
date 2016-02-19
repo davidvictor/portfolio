@@ -6,12 +6,24 @@
 	+ * {
 		margin-top: $spacing-giant;
 	}
+	@include media('<=medium') {
+		height:      auto;
+		&:first-of-type {
+			margin-top: 6rem;
+		}
+	}
 
 }
+$lax-width: 65vw;
+$lax-width-sm: 95vw;
 
 .lax-container {
-	width: 50vw;
-	height: 50vw * .56;
+	width: $lax-width;
+	height: $lax-width * .56;
+	@include media('<=medium') {
+		width: $lax-width-sm;
+		height: $lax-width-sm * .56;
+	}
 	flex: 0 0 auto;
 	padding: 0 !important;
 	margin-bottom:3rem;

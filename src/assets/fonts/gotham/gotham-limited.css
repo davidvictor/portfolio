@@ -1,0 +1,18 @@
+
+
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.svg#GothamRounded-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

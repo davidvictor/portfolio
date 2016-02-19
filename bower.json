@@ -15,7 +15,7 @@
     "animate.css": "~3.4.0",
     "angular": "~1.5.0",
     "angular-scroll-magic": "git://github.com/davidvictor/angular-scroll-magic.git#master",
-    "ng-chocolat": "*",
+    "ng-chocolat":  "git://github.com/davidvictor/ng-chocolat.git#master",
     "foundation-apps": "^1.2.0",
     "devices.css": "*",
     "include-media": "git://github.com/davidvictor/include-media.git#master",

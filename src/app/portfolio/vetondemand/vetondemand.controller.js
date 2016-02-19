@@ -34,64 +34,65 @@ export class VetOnDemandController {
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/brand-2-r.jpg',
+				thumb: 'assets/images/vetondemand/photo/brand-2-r-sm.jpg'
 			},
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/girl-window-dog-hug.jpg',
+				thumb: 'assets/images/vetondemand/photo/girl-window-dog-hug-sm.jpg'
 			},
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/vet-office-dog-examine.jpg',
+				thumb: 'assets/images/vetondemand/photo/vet-office-dog-examine-sm.jpg'
 			},
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/dog-bed-covers-feet.jpg',
+				thumb: 'assets/images/vetondemand/photo/dog-bed-covers-feet-sm.jpg'
 			},
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/cat-hold-hands.jpg',
+				thumb: 'assets/images/vetondemand/photo/cat-hold-hands-sm.jpg'
 			},
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/archive/classic.jpg',
-				thumb: 'assets/images/archive/classic-sm.jpg'
+				src: 'assets/images/vetondemand/photo/older-woman-with-puppy.jpg',
+				thumb: 'assets/images/vetondemand/photo/older-woman-with-puppy-sm.jpg'
 			}
 		];
 
 		this.fonts = [
 			{
 				name: 'Proxima Nova',
-				weight: 'Book',
+				weight: 'Regular',
 				class: 'proxima weight-300'
 			},
-			{
-				name: 'Proxima Nova',
-				weight: 'Semi-Bold',
-				class: 'proxima weight-600'
-			},
+			//{
+			//	name: 'Proxima Nova',
+			//	weight: 'Semi-Bold',
+			//	class: 'proxima weight-500'
+			//},
+			//{
+			//	name: 'Gotham Rounded',
+			//	weight: 'Light',
+			//	class: 'gotham weight-300'
+			//},
 			{
 				name: 'Gotham Rounded',
-				weight: 'Light',
-				class: 'gotham weight-300'
-			},
-			{
-				name: 'Gotham Rounded',
-				weight: 'Medium',
-				class: 'gotham weight-500'
+				weight: 'Bold',
+				class: 'gotham weight-700'
 			}
 
 		];
+
 		this.logos = [
 			//{
 			//	name: 'angular',
@@ -128,6 +129,12 @@ export class VetOnDemandController {
 				name: 'grunt',
 				desc: ''
 			},
+
+			{
+				name: 'handlebars',
+				desc: ''
+			},
+
 			{
 				name: 'mysql',
 				desc: ''
@@ -159,10 +166,6 @@ export class VetOnDemandController {
 			//	desc: ''
 			//},
 
-			{
-				name: 'handlebars',
-				desc: ''
-			},
 
 			{
 				name: 'ironio',
@@ -201,10 +204,10 @@ export class VetOnDemandController {
 				desc: ''
 			},
 
-			{
-				name: 'aws-glacier',
-				desc: ''
-			},
+			//{
+			//	name: 'aws-glacier',
+			//	desc: ''
+			//},
 
 			{
 				name: 'aws-rds',
@@ -221,10 +224,10 @@ export class VetOnDemandController {
 				desc: ''
 			},
 
-			{
-				name: 'aws-ses',
-				desc: ''
-			},
+			//{
+			//	name: 'aws-ses',
+			//	desc: ''
+			//},
 
 			{
 				name: 'aws-sqs',
@@ -251,6 +254,8 @@ export class VetOnDemandController {
 			timer: false,
 			timerDebounce: false
 		};
+
+		this.instance = {};
 
 	}
 }

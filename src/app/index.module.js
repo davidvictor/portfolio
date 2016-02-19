@@ -7,11 +7,12 @@ import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
 import { MenuDirective } from '../app/components/menu/menu.directive';
 import { ScrollMenuDirective } from '../app/components/scrollmenu/scrollmenu.directive';
+import { repeatComplete } from './helpers/repeatcomplete.directive';
+import { repeatEndEmit } from './helpers/repeatend.directive';
 import { MainController } from './main/main.controller';
 import { VetOnDemandController } from './portfolio/vetondemand/vetondemand.controller';
 import { ArchiveController } from './portfolio/archive/archive.controller';
 import { ContactController } from './pages/contact/contact.controller';
-
 
 
 angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting','foundation.dynamicRouting.animations', 'chocolat','dv.scrollMagic','duScroll'])
@@ -23,4 +24,6 @@ angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
 	.controller('ArchiveController', ArchiveController)
 	.controller('ContactController', ContactController)
 	.directive('verticalMenu', MenuDirective)
-	.directive('scrollMenu', ScrollMenuDirective);
+	.directive('scrollMenu', ScrollMenuDirective)
+	.directive('repeatComplete', repeatComplete)
+	.directive('repeatEndEmit', repeatEndEmit);

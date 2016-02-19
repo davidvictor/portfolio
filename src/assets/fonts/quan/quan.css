@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Black.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Black.woff') format('woff'), url('QuanRounded-Black.ttf') format('truetype'), url('QuanRounded-Black.svg#QuanRounded-Black') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-BlackItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-BlackItalic.woff') format('woff'), url('QuanRounded-BlackItalic.ttf') format('truetype'), url('QuanRounded-BlackItalic.svg#QuanRounded-BlackItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Bold.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Bold.woff') format('woff'), url('QuanRounded-Bold.ttf') format('truetype'), url('QuanRounded-Bold.svg#QuanRounded-Bold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-BoldItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-BoldItalic.woff') format('woff'), url('QuanRounded-BoldItalic.ttf') format('truetype'), url('QuanRounded-BoldItalic.svg#QuanRounded-BoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-ExtraBold.eot?#iefix') format('embedded-opentype'), url('QuanRounded-ExtraBold.woff') format('woff'), url('QuanRounded-ExtraBold.ttf') format('truetype'), url('QuanRounded-ExtraBold.svg#QuanRounded-ExtraBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-ExtraBoldItalic.woff') format('woff'), url('QuanRounded-ExtraBoldItalic.ttf') format('truetype'), url('QuanRounded-ExtraBoldItalic.svg#QuanRounded-ExtraBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-ExtraLight.eot?#iefix') format('embedded-opentype'), url('QuanRounded-ExtraLight.woff') format('woff'), url('QuanRounded-ExtraLight.ttf') format('truetype'), url('QuanRounded-ExtraLight.svg#QuanRounded-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-ExtraLightItalic.woff') format('woff'), url('QuanRounded-ExtraLightItalic.ttf') format('truetype'), url('QuanRounded-ExtraLightItalic.svg#QuanRounded-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Italic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Italic.woff') format('woff'), url('QuanRounded-Italic.ttf') format('truetype'), url('QuanRounded-Italic.svg#QuanRounded-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Light.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Light.woff') format('woff'), url('QuanRounded-Light.ttf') format('truetype'), url('QuanRounded-Light.svg#QuanRounded-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-LightItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-LightItalic.woff') format('woff'), url('QuanRounded-LightItalic.ttf') format('truetype'), url('QuanRounded-LightItalic.svg#QuanRounded-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Medium.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Medium.woff') format('woff'), url('QuanRounded-Medium.ttf') format('truetype'), url('QuanRounded-Medium.svg#QuanRounded-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-MediumItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-MediumItalic.woff') format('woff'), url('QuanRounded-MediumItalic.ttf') format('truetype'), url('QuanRounded-MediumItalic.svg#QuanRounded-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Regular.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Regular.woff') format('woff'), url('QuanRounded-Regular.ttf') format('truetype'), url('QuanRounded-Regular.svg#QuanRounded-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-Thin.eot?#iefix') format('embedded-opentype'), url('QuanRounded-Thin.woff') format('woff'), url('QuanRounded-Thin.ttf') format('truetype'), url('QuanRounded-Thin.svg#QuanRounded-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuanRounded';
+    src: url('QuanRounded-ThinItalic.eot?#iefix') format('embedded-opentype'), url('QuanRounded-ThinItalic.woff') format('woff'), url('QuanRounded-ThinItalic.ttf') format('truetype'), url('QuanRounded-ThinItalic.svg#QuanRounded-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}

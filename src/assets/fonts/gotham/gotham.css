@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Bold.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Bold.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-BoldItalic.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-BoldItalic.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-BoldItalic.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-BoldItalic.svg#GothamRounded-BoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Italic.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Italic.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Italic.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Italic.svg#GothamRounded-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Light.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Light.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Light.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-LightItalic.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-LightItalic.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-LightItalic.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-LightItalic.svg#GothamRounded-LightItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-MediumItalic.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-MediumItalic.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-MediumItalic.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-MediumItalic.svg#GothamRounded-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.eot?#iefix') format('embedded-opentype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.woff') format('woff'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.ttf') format('truetype'), url('http://vod-global-assets.s3.amazonaws.com/webfonts/gotham/GothamRounded-Regular.svg#GothamRounded-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

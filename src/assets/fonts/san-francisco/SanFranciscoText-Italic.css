@@ -1,0 +1,12 @@
+/* Webfont: SanFranciscoText-Italic */@font-face {
+    font-family: 'SanFranciscoTextRegular';
+    src: url('SanFranciscoText-Italic.eot'); /* IE9 Compat Modes */
+    src: url('SanFranciscoText-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('SanFranciscoText-Italic.woff') format('woff'), /* Modern Browsers */
+         url('SanFranciscoText-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('SanFranciscoText-Italic.svg#SanFranciscoText-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

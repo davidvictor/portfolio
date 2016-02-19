@@ -1,10 +1,37 @@
 vertical-menu {
 	display:   flex;
 	flex-flow: row wrap;
-	width:     $menu-width;
-	@include p($spacing-large 0 $spacing-default $spacing-large);
+	width: 100%;
+	padding:3rem;
+	background: white;
+	z-index: 100;
+	.menu-hidden & {
+		transform: translate3d(-100%, 0, 0);
+	}
+	.menu-visible & {
+		transform: translate3d(0, 0, 0);
+	}
+	transition: transform 200ms ease;
+	@include breakpoint(medium) {
+		width:     $menu-width;
+		background: transparent;
+		.menu-hidden & {
+			transform: translate3d(0, 0, 0);
+		}
+		@include p($spacing-large 0 $spacing-default $spacing-small);
+	}
+	@include breakpoint(large) {
+		@include p($spacing-large 0 $spacing-default $spacing-default);
+	}
+
 	.logo {
 		@include p($spacing-small, bottom);
+		@include breakpoint(medium) {
+			@include p($spacing-tiny, left);
+		}
+		@include breakpoint(large) {
+			@include p($spacing-micro, left);
+		}
 		a {
 			font-family:           unquote(map-get($headingtype, font-family));
 			font-style:            italic;
@@ -15,8 +42,12 @@ vertical-menu {
 				font-weight: 700;
 			}
 			@include roar-fontsize('epsilon', all);
+			@include media('<=medium') {
+				font-size: 3rem !important;
+			}
 			span.line-break {
-				@include media('>large') {
+				display: none;
+				@include breakpoint(medium) {
 					display: none;
 				}
 			}
@@ -25,11 +56,19 @@ vertical-menu {
 	.vertical.menu-bar {
 		li {
 			flex-flow: column nowrap;
+
 			 > a {
 				 @include roar-fontsize('eta', all);
+				 @include media('<=medium') {
+					 font-size: 2rem !important;
+					 font-weight: 300;
+				 }
 				 font-weight: 500;
 				 text-transform: uppercase;
 				 letter-spacing: 0.08rem;
+				 @include media('<=medium') {
+					 padding:3rem 2rem;
+				 }
 			}
 			&.active {
 				a {
@@ -56,6 +95,10 @@ vertical-menu {
 				padding-top:    $menubar-item-padding * (2/3);
 				padding-bottom: $menubar-item-padding * (2/3);
 				@include roar-fontsize('theta', all);
+				@include media('<=medium') {
+					padding:2rem 2rem;
+					font-size: 1.5rem !important;
+				}
 				font-weight: 300;
 				text-transform: none;
 				letter-spacing: 0;
@@ -73,6 +116,57 @@ vertical-menu {
 			padding: .5rem;
 			svg {
 				margin: 0 !important;
+			}
+		}
+	}
+}
+
+#menu-toggle {
+	position: absolute;
+	z-index: 102;
+	display: none;
+	top: 0;
+	left: 0;
+	transform: translate3d(0, 0, 0);
+	&.menu-visible {
+		transform: translate3d(-100%, 0, 0);
+		left:100%;
+		button {
+			span {
+				&:before {
+					content: 'CLOSE';
+				}
+			}
+		}
+	}
+	transition: all 200ms ease;
+	@include media('<=medium') {
+		display: block;
+	}
+	background: white;
+	border-bottom-right-radius: 4px;
+	button {
+		appearance: none;
+		padding: 1rem 1.5rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+		&:focus {
+			outline: none;
+		}
+		span {
+			display: inline-block;
+			&:before {
+				content: 'MENU';
+				display: inline-block;
+				font-family:           unquote(map-get($headingtype, font-family));
+				font-style:            italic;
+				@include roar-fontsize('epsilon', all);
+				font-weight: 700;
+				letter-spacing: 1px;
+				color: $black;
+				@include longTextShadow (white,45,2,0,0,0,0,4px,$black,0.2,1px);
 			}
 		}
 	}

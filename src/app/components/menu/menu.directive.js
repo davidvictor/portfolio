@@ -5,7 +5,7 @@ export function MenuDirective() {
 
 	let directive = {
 		restrict: 'E',
-		scope: {},
+		//scope: {},
 		controller: VerticalMenuController,
 		controllerAs: 'vm',
 		bindToController: true,
@@ -28,13 +28,15 @@ class VerticalMenuController {
 			timing: 'ease'
 		};
 
+		this.toggleMenu = false;
+
 		this.config = {
 			data: [
 				{
 					label: 'About',
 					location: 'about',
 					callback: function () {
-						//$state.go('about');
+						//
 					}
 
 				},
@@ -46,14 +48,14 @@ class VerticalMenuController {
 							label: 'Vet On Demand',
 							location: 'vetondemand',
 							callback: function () {
-							//	$state.go('vetondemand');
+								//this.toggleMenu = !this.toggleMenu;
 							}
 						},
 						{
 							label: 'Archive',
 							location: 'archive',
 							callback: function () {
-							//	$state.go('archive');
+								//this.toggleMenu = !this.toggleMenu;
 							}
 						}
 					]
@@ -62,23 +64,32 @@ class VerticalMenuController {
 					label: 'Contact',
 					location: 'contact',
 					callback: function () {
-						//$state.go('contact');
+						//this.toggleMenu = !this.toggleMenu;
 					}
 				}
 			]
 		};
 
+
+
 		this.$rootScope = $rootScope;
 		this.$location  = $location;
-		this.$element= $element;
+		this.$element   = $element;
+
+		//$rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
+		//	if (this.isToggleMenu()) {
+		//		this.toggleMenu = !this.toggleMenu;
+		//		return this.toggleMenu;
+		//	}
+		//});
 
 	}
-
 
 	getRoute(item) {
 		if (item.location == '') {
 			return false;
-		} else {
+		}
+		else {
 			return item.location;
 		}
 	}
@@ -151,5 +162,11 @@ class VerticalMenuController {
 		id += index;
 		return id;
 	}
+
+	isToggleMenu() {
+		this.toggleMenu = (this.toggleMenu) ? false : true;
+		return this.toggleMenu;
+	}
+
 
 }
