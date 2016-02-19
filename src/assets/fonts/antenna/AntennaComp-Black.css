@@ -1,0 +1,12 @@
+/* Webfont: AntennaComp-Black */@font-face {
+    font-family: 'AntennaCompBlack';
+    src: url('AntennaComp-Black.eot'); /* IE9 Compat Modes */
+    src: url('AntennaComp-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AntennaComp-Black.woff') format('woff'), /* Modern Browsers */
+         url('AntennaComp-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AntennaComp-Black.svg#AntennaComp-Black') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

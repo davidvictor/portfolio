@@ -84,6 +84,8 @@ $brandon: 'brandon', #{$default-font-stack};
 $eames: 'eames', #{$default-font-stack};
 $proxima: 'proxima', #{$default-font-stack};
 $gotham: 'gotham', #{$default-font-stack};
+$stereo: 'stereo', #{$default-font-stack};
+$antenna: 'antenna', #{$default-font-stack};
 
 // Add typefaces here.
 // Add weight and style details too.
@@ -97,7 +99,7 @@ $bodytype: (
 					 );
 
 $headingtype: (
-								font-family: $eames,
+								font-family: $antenna,
 								regular: 300,
 								bold: 700,
 								cap-height: 0.65
@@ -142,8 +144,8 @@ $faces: (
 					),
 					"eamesTI": (
 						family: "eames",
-						url: "../assets/fonts/eames/EamesCenturyModern-ThinItalic",
-						weight: 100,
+						url: "../assets/fonts/eames/EamesCenturyModern-LightIta",
+						weight: 200,
 						style: italic
 					),
 					"brandonB": (
@@ -193,7 +195,85 @@ $faces: (
 						url: "../assets/fonts/gotham/GothamRounded-Bold",
 						weight: 700,
 						style: normal
-					)
+					),
+					"stereoa": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-100",
+						weight: 100,
+						style: normal
+					),
+					"stereob": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-200",
+						weight: 200,
+						style: normal
+					),
+					"stereoc": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-300",
+						weight: 300,
+						style: normal
+					),
+					"stereod": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-400",
+						weight: 400,
+						style: normal
+					),
+					"stereoe": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-500",
+						weight: 500,
+						style: normal
+					),
+					"stereof": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-600",
+						weight: 600,
+						style: normal
+					),
+					"stereog": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-700",
+						weight: 700,
+						style: normal
+					),
+					"stereoh": (
+						family: "stereo",
+						url: "../assets/fonts/stereo-gothic/StereoGothic-800",
+						weight: 800,
+						style: normal
+					),
+					"antenna1": (
+						family: "antenna",
+						url: "../assets/fonts/antenna/Antenna-Light",
+						weight: 300,
+						style: normal
+					),
+					"antenna3": (
+						family: "antenna",
+						url: "../assets/fonts/antenna/Antenna-ExtraLight",
+						weight: 200,
+						style: normal
+					),
+					"antenna2": (
+						family: "antenna",
+						url: "../assets/fonts/antenna/Antenna-Thin",
+						weight: 100,
+						style: normal
+					),
+					"antenna4": (
+						family: "antenna",
+						url: "../assets/fonts/antenna/Antenna-Regular",
+						weight: 400,
+						style: normal
+					),
+					"antenna5": (
+						family: "antenna",
+						url: "../assets/fonts/antenna/Antenna-Medium",
+						weight: 500,
+						style: normal
+					),
 				);
 $font-formats: eot woff ttf;
 
@@ -382,7 +462,7 @@ html {
 }
 
 body {
-	font-family:           unquote(map-get($bodytype, font-family));
+	font-family:           map-get($bodytype, font-family);
 	font-style:            normal;
 	font-weight:           map-get($bodytype, regular);
 	line-height:           1.5;
@@ -395,6 +475,28 @@ body {
 	padding-left: 0;
 	@include breakpoint(medium) {
 		padding-left: 3rem;
+	}
+	&::-webkit-scrollbar              {
+		//background: transparent;
+		display: none;
+	}
+	&::-webkit-scrollbar-button       {
+
+	}
+	&::-webkit-scrollbar-track        {
+
+	}
+	&::-webkit-scrollbar-track-piece  {
+
+	}
+	&::-webkit-scrollbar-thumb        {
+
+	}
+	&::-webkit-scrollbar-corner       {
+
+	}
+	&::-webkit-resizer                {
+
 	}
 }
 
@@ -453,7 +555,7 @@ p.tiny {
 }
 
 #{$all-headings} {
-	font-family:    unquote(map-get($headingtype, font-family));
+	font-family:    map-get($headingtype, font-family);
 	font-style:     italic;
 	font-weight:    map-get($headingtype, regular);
 	text-transform: uppercase;

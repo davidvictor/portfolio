@@ -1,0 +1,12 @@
+/* Webfont: AntennaCond-Bold */@font-face {
+    font-family: 'AntennaCondBold';
+    src: url('AntennaCond-Bold.eot'); /* IE9 Compat Modes */
+    src: url('AntennaCond-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AntennaCond-Bold.woff') format('woff'), /* Modern Browsers */
+         url('AntennaCond-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AntennaCond-Bold.svg#AntennaCond-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

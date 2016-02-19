@@ -1,0 +1,12 @@
+/* Webfont: Antenna-MediumItalic */@font-face {
+    font-family: 'AntennaMedium';
+    src: url('Antenna-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('Antenna-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Antenna-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('Antenna-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Antenna-MediumItalic.svg#Antenna-MediumItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

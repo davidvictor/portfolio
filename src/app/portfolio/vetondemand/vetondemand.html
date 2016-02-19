@@ -6,11 +6,7 @@
 <!--suppress ALL -->
 <scroll-menu></scroll-menu>
 
-<!--------------------------------------------------------------------------------
-    Overview
-<|-------------------------------------------------------------------------------->
-
-<div class="grid-block wrap  small-12" id="overview">
+<div class="grid-block wrap  small-12" id="hero">
 	<div class="grid-block align-center self-stretch small-12 noscroll noverflow section-block block-fullscreen" sm-scene="branding" duration="150%" offset="0" trigger-hook="0">
 		<div class="hero-bg" sm-tween="branding" vars="{y:'20%'}"></div>
 		<div class="grid-block noscroll align-center items-center justify-center section-container small-12">
@@ -19,7 +15,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid-block align-center self-stretch small-12 noscroll section-block block-fullscreen">
+</div>
+<!--------------------------------------------------------------------------------
+    Overview
+<|-------------------------------------------------------------------------------->
+
+<div class="grid-block wrap  small-12" id="overview" sm-scene="branding" duration="200%" offset="0" trigger-hook="0">
+
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block p-t-d" sm-tween="branding" vars="{y:'0'}">
 		<div class="grid-block noscroll align-center items-center section-container small-12 medium-9 large-8 p-b-l">
 
 			<div class="grid-content ">
@@ -59,12 +62,14 @@
 	</div>
 
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
-		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
+		<div class="grid-block wrap noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
+			<div class="grid-content small-12 text-center">
+				<img class="research-chart" src="assets/images/vetondemand/chart-2.svg" width="400px" alt="" class="fade-in">
+			</div>
+			<div class="grid-content small-12 text-center">
 
-			<div class="grid-content text-center">
-				<img src="assets/images/vetondemand/chart-2.svg" width="400px" alt="" class="fade-in">
+				<h6 class="section-heading centered block">There are plenty of Vets</h6>
 
-				<p class="tiny uppercase m-t-m"><strong>There are plenty of Vets</strong></p>
 				<p class="small">The U.S. supply of veterinarians in 2012 was 90,200, and that supply exceeded the demand for veterinary services by about 11,250 full-time&nbsp;equivalent&nbsp;veterinarians.</p>
 			</div>
 
@@ -73,15 +78,27 @@
 
 
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
-		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l" sm-scene="tween-section" duration="200%" offset="0" trigger-hook="1">
+		<div class="grid-block wrap noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
+			<div class="grid-content small-12 text-center">
+				<img class="research-chart" src="assets/images/vetondemand/chart-1.svg" width="400px" alt="">
+			</div>
+			<div class="grid-content small-12 text-center">
 
-			<div class="grid-content text-center">
-				<img src="assets/images/vetondemand/chart-1.svg" width="400px" alt="">
+				<h6 class="section-heading centered block">incomes are falling</h6>
 
-				<p class="tiny uppercase m-t-m"><strong>incomes are falling</strong></p>
 				<p class="small">Over the past decade, veterinarians have seen their wages fall. Increasing prices from pharmaceutical companies and the ever advancing march of
 				                 technology have cut even deeper into&nbsp;practices&nbsp;nationwide.
 				</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-7 p-b-l">
+
+			<div class="grid-content text-center">
+				<h4 class="p-h-l blockquote">72% of cats and 42% of dogs only sea a vet either once or not&nbsp;at&nbsp;all&nbsp;anually</h4>
 			</div>
 
 		</div>
@@ -91,17 +108,16 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block noscroll align-center items-center content-center section-container wrap small-12 medium-10 p-b-l" sm-scene="tween-section" duration="200%" offset="0" trigger-hook="1">
 
-			<div class="grid-content small-12 text-center">
-				<h5 class="p-h-l">72% OF CATS AND 42% OF DOGS ONLY SEE A VET EITHER ONCE OR NOT AT ALL ANNUALLY</h5>
-			</div>
-			<div class="grid-content small-6 text-center">
-				<p class="tiny uppercase m-t-m"><strong>prices are rising</strong></p>
+			<div class="grid-content small-6">
+				<span class="section-subheading">Prices are rising</span>
+
 				<p class="small">Going to the vet has not been getting less expensive. Prices have risen steadily at or faster than inflation for two decades. Americans will spend
 				                 over 60 billion this year on their pets, more than a third of that going to veterinary care.
 				</p>
 			</div>
-			<div class="grid-content small-6 text-center">
-				<p class="tiny uppercase m-t-m"><strong>people are busy</strong></p>
+			<div class="grid-content small-6">
+				<span class="section-subheading">People are busy</span>
+
 				<p class="small">Going to the vet has not been getting less expensive. Prices have risen steadily at or faster than inflation for two decades. Americans will spend
 				                 over 60 billion this year on their pets, more than a third of that going to veterinary care.
 				</p>
@@ -159,10 +175,12 @@
 
 			<div class="grid-content small-12 text-center typeset">
 
-				<p class="">Vet On Demand facilitates trusted, convienient, and affordable access to licensed veterinarians who provide the advice and recommendations to those who would otherwise&nbsp;forego&nbsp;it.
+				<p class="">Vet On Demand facilitates trusted, convienient, and affordable access to licensed veterinarians who provide the advice and recommendations to those who
+				            would otherwise&nbsp;forego&nbsp;it.
 				</p>
 
-				<p class="">By allowing on demand economics into a traditionally closed system, we increase the level and scope of care our pets receive while the size of the market grows to its&nbsp;full&nbsp;potential.
+				<p class="">By allowing on demand economics into a traditionally closed system, we increase the level and scope of care our pets receive while the size of the
+				            market grows to its&nbsp;full&nbsp;potential.
 				</p>
 
 			</div>
@@ -189,6 +207,16 @@
 		<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">
 			<div class="grid-content text-center fade-in">
 				<h6 class="section-heading">Logo</h6>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
+		<div class="grid-block noscroll align-spaced items-center section-container small-12 medium-10 large-9">
+			<div class="grid-content small-12 medium-6">
+				<div class="logo-h"></div>
+			</div>
+			<div class="grid-content small-12 medium-6">
+				<div class="logo-v"></div>
 			</div>
 		</div>
 	</div>

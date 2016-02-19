@@ -12,20 +12,22 @@ scroll-menu {
 		background: transparent;
 		li {
 			flex-flow: column nowrap;
+			transform: translate3d(0, 0, 0);
 			a {
+				transform: translate3d(0, 0, 0);
 				@include roar-fontsize('theta', all);
 				transition: all 200ms $ease-out-back;
 			}
 			&:hover,
 			&.active {
 				> a {
-					transform: translateX(.1rem);
+					transform: translate3d(.1rem, 0, 0);
 				}
 			}
 
 			&.active {
 				a {
-					color: $gold;
+					//color: $gold;
 				}
 			}
 		}

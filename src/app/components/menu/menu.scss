@@ -33,13 +33,14 @@ vertical-menu {
 			@include p($spacing-micro, left);
 		}
 		a {
-			font-family:           unquote(map-get($headingtype, font-family));
+			font-family:          $eames;
 			font-style:            italic;
 			font-weight:           map-get($bodytype, regular);
 			text-transform: uppercase;
 			line-height: 1;
 			span span {
 				font-weight: 700;
+				@include roar-fontsize(1.2rem, all);
 			}
 			@include roar-fontsize('epsilon', all);
 			@include media('<=medium') {
@@ -58,12 +59,14 @@ vertical-menu {
 			flex-flow: column nowrap;
 
 			 > a {
-				 @include roar-fontsize('eta', all);
+				 @include roar-fontsize('theta', all);
 				 @include media('<=medium') {
 					 font-size: 2rem !important;
 					 font-weight: 300;
 				 }
-				 font-weight: 500;
+				 font-family:  map-get($headingtype, font-family);
+				 font-weight: 700;
+				 font-style: italic;
 				 text-transform: uppercase;
 				 letter-spacing: 0.08rem;
 				 @include media('<=medium') {
@@ -160,7 +163,7 @@ vertical-menu {
 			&:before {
 				content: 'MENU';
 				display: inline-block;
-				font-family:           unquote(map-get($headingtype, font-family));
+				font-family:           map-get($headingtype, font-family);
 				font-style:            italic;
 				@include roar-fontsize('epsilon', all);
 				font-weight: 700;

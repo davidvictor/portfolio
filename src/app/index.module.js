@@ -15,7 +15,7 @@ import { ArchiveController } from './portfolio/archive/archive.controller';
 import { ContactController } from './pages/contact/contact.controller';
 
 
-angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting','foundation.dynamicRouting.animations', 'chocolat','dv.scrollMagic','duScroll'])
+angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting','foundation.dynamicRouting.animations', 'chocolat','dv.scrollMagic','duScroll','ngDisableScroll'])
 	.config(config)
 	.config(routerConfig)
 	.run(runBlock)

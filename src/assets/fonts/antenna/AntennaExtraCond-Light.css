@@ -1,0 +1,12 @@
+/* Webfont: AntennaExtraCond-Light */@font-face {
+    font-family: 'AntennaExtraCondLight';
+    src: url('AntennaExtraCond-Light.eot'); /* IE9 Compat Modes */
+    src: url('AntennaExtraCond-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AntennaExtraCond-Light.woff') format('woff'), /* Modern Browsers */
+         url('AntennaExtraCond-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AntennaExtraCond-Light.svg#AntennaExtraCond-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

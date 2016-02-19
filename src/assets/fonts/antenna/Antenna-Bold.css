@@ -1,0 +1,12 @@
+/* Webfont: Antenna-Bold */@font-face {
+    font-family: 'AntennaBold';
+    src: url('Antenna-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Antenna-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Antenna-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Antenna-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Antenna-Bold.svg#Antenna-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

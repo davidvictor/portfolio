@@ -13,7 +13,8 @@
 	}
 	//@include p($spacing-small,vertical);
 	&.block-small {
-		min-height: 50vh;
+		//min-height: 50vh;
+		padding-top: 5rem;
 	}
 	//}
 	& + * {
@@ -30,7 +31,7 @@
 		&.section-heading {
 			display:     inline-block;
 			color:       $black;
-			font-family: unquote(map-get($bodytype, font-family));
+			font-family: map-get($bodytype, font-family);
 			font-style:  normal;
 			font-weight: 700;
 			position:    relative;
@@ -71,10 +72,23 @@
 	}
 }
 
+.research-chart {
+	margin-left:3rem;
+	margin-right:3rem;
+	margin-bottom:3rem;
+}
+
+.blockquote {
+	font-family: $eames;
+	font-weight: 200;
+	text-transform: none;
+	//text-transform: capitalize !important;
+}
+
 span.section-subheading {
 	display:        inline-block;
 	color:          $black;
-	font-family:    unquote(map-get($bodytype, font-family));
+	font-family:    map-get($bodytype, font-family);
 	font-style:     normal;
 	font-weight:    700;
 	position:       relative;
@@ -83,6 +97,14 @@ span.section-subheading {
 	margin-bottom:  $spacing-small;
 	padding-bottom: $spacing-small;
 	@include roar-fontsize('theta', all);
+	&.centered {
+		display: block;
+		text-align: center;
+		&:after {
+			left:             50%;
+			transform:        translateX(-50%);
+		}
+	}
 	&:after {
 		content:          '';
 		position:         absolute;
@@ -178,7 +200,12 @@ span.section-subheading {
 	background-repeat:   no-repeat;
 }
 
-#overview {
+#overview > * {
+	transform:           translate3d(0, 10%, 0);
+}
+
+#overview,
+#hero{
 	.hero-bg {
 		background-image: url('../assets/images/vetondemand/brand/overlay-brand-primary.png');
 	}
@@ -200,6 +227,24 @@ span.section-subheading {
 }
 
 #branding {
+	.logo-v {
+		margin:              auto;
+		height:              9rem;
+		width:               11rem;
+		background-size:     contain;
+		background-position: center center;
+		background-repeat:   no-repeat;
+		background-image:    url('../assets/images/vetondemand/brand/logo-v.svg');
+	}
+	.logo-h {
+		margin:              auto;
+		height:              5rem;
+		width:               15rem;
+		background-size:     contain;
+		background-position: center center;
+		background-repeat:   no-repeat;
+		background-image:    url('../assets/images/vetondemand/brand/logo-h.svg');
+	}
 }
 
 @mixin color-card($color) {
@@ -306,7 +351,7 @@ $vod-brand-colors: (
 		background-image: url('../assets/img/lionhouse/design.svg');
 	}
 	&-mobile {
-		background-image: url('../assets/img/lionhouse/UI.svg');
+		background-image: url('../assets/img/lionhouse/UI2.svg');
 	}
 	&-web {
 		background-image: url('../assets/img/lionhouse/UX-IA.svg');
