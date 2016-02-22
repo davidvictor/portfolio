@@ -137,7 +137,19 @@ span.section-subheading {
 	}
 }
 
-[class^='render-'] {
+
+@mixin web-render($a,$h:false) {
+	@if $h {
+		width:  $a * 1.6;
+		height: $a;
+	} @else {
+		width:  $a;
+		height: $a * .63;
+	}
+}
+
+[class^='render-'],
+[class^='web-'] {
 	display:             block;
 	position:            relative;
 	backface-visibility: hidden;
@@ -161,18 +173,46 @@ span.section-subheading {
 		}
 	}
 	&-large {
-		@include iphone-render(12rem);
+		@include iphone-render(10rem);
 		@include media('<=large') {
 			@include iphone-render(8rem);
 		}
 		&.android {
-			@include android-render(18rem);
+			@include android-render(14rem);
 			@include media('<=large') {
 				@include android-render(12rem);
 			}
 		}
 	}
+	&-huge {
+		@include iphone-render(16rem);
+		@include media('<=large') {
+			@include iphone-render(10rem);
+		}
+	}
 }
+
+.web {
+	&-small {
+		@include web-render(5rem);
+	}
+	&-medium {
+		@include web-render(8rem);
+	}
+	&-large {
+		@include web-render(28rem);
+		@include media('<=large') {
+			@include web-render(20rem);
+		}
+	}
+	&-huge {
+		@include web-render(16rem);
+		@include media('<=large') {
+			@include web-render(10rem);
+		}
+	}
+}
+
 
 @include media('<=medium') {
 	.phone-render-container {
@@ -204,19 +244,33 @@ span.section-subheading {
 	transform:           translate3d(0, 10%, 0);
 }
 
+#hero {
+	span[class*='render'] {
+		position: absolute;
+		z-index: 2;
+		&.call {
+			right: 8rem;
+			bottom: 0;
+			transform:           translate3d(0, 11%, 0);
+		}
+		&.history {
+			right: 18rem;
+			bottom: 0;
+			transform:           translate3d(0, 22%, 0);
+		}
+	}
+}
+
 #overview,
 #hero{
 	.hero-bg {
-		background-image: url('../assets/images/vetondemand/brand/overlay-brand-primary.png');
+		background-image: url('../assets/images/vetondemand/brand/overlay-brand-secondary.jpg');
+
 	}
-	.logo-mark {
+	img {
 		margin:              auto;
-		height:              5rem;
-		width:               5rem;
-		background-size:     contain;
-		background-position: center center;
-		background-repeat:   no-repeat;
-		background-image:    url('../assets/images/vetondemand/brand/logo-mark-white.svg');
+		height:              7rem;
+		width:               14rem;
 	}
 	.block-fullscreen {
 		.hero-bg {
@@ -330,6 +384,10 @@ $vod-brand-colors: (
 	font-family: $proxima;
 }
 
+.coming-soon {
+	color: #bbbbbb;
+}
+
 .icon {
 	&-heading {
 		display:             block;
@@ -424,6 +482,16 @@ $vod-brand-colors: (
 			}
 			&.right {
 				background-image: url('../assets/images/vetondemand/renders-v2/receipt-gold-right.png');
+			}
+		}
+	}
+	&.history {
+		&.gold {
+			&.left {
+				background-image: url('../assets/images/vetondemand/renders-v1/history_gold_left.png');
+			}
+			&.right {
+				background-image: url('../assets/images/vetondemand/renders-v1/history_gold_right.png');
 			}
 		}
 	}

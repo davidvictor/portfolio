@@ -18,11 +18,11 @@ export class VetOnDemandController {
 				hex: '#ededed',
 				hsl: ['27','28%','51%']
 			},
-			{
-				name: 'grey2',
-				hex: '#bbbbbb',
-				hsl: ['27','28%','51%']
-			},
+			//{
+			//	name: 'grey2',
+			//	hex: '#bbbbbb',
+			//	hsl: ['27','28%','51%']
+			//},
 			{
 				name: 'gunmetal',
 				hex: '#212121',
@@ -30,12 +30,64 @@ export class VetOnDemandController {
 			}
 		];
 
+		this.ios = [
+			{
+				screen: 'receipt',
+				src: 'assets/images/vetondemand/renders-v2/receipt-gold-front.png',
+				direction: 'left'
+			},
+			{
+				screen: 'home',
+				src: 'assets/images/vetondemand/renders-v2/home-gold-front.png',
+				direction: 'left'
+			},
+			{
+				screen: 'profile-vet',
+				src: 'assets/images/vetondemand/renders-v2/profile-vet-gold-front.png',
+				direction: 'right'
+			},
+			{
+				screen: 'signup',
+				src: 'assets/images/vetondemand/renders-v2/signup-gold-front.png',
+				direction: 'right'
+			}
+		];
+
+		this.android = [
+			{
+				screen: 'queue',
+				src: 'assets/images/vetondemand/renders-android/android-angle.png',
+				direction: 'right'
+			},
+			{
+				screen: 'call',
+				src: 'assets/images/vetondemand/renders-android/android-front.png',
+				direction: 'left'
+			},
+			{
+				screen: 'menu',
+				src: 'assets/images/vetondemand/renders-android/android-angle-right.png',
+				direction: 'left'
+			}
+		];
+
+		this.web = [
+			{
+				src: 'assets/images/vetondemand/web/dashboard@2x.jpg',
+				thumb:'assets/images/vetondemand/web/dashboard-left.png'
+			},
+			{
+				src: 'assets/images/vetondemand/web/video@2x.jpg',
+				thumb:'assets/images/vetondemand/web/call-right.png'
+			}
+		];
+
 		this.photos = [
 			{
 				id: 'girl-window',
 				size: 'small-12 medium-6 large-4',
-				src: 'assets/images/vetondemand/photo/brand-2-r.jpg',
-				thumb: 'assets/images/vetondemand/photo/brand-2-r-sm.jpg'
+				src: 'assets/images/vetondemand/photo/brand-1.jpg',
+				thumb: 'assets/images/vetondemand/photo/brand-1-sm.jpg'
 			},
 			{
 				id: 'girl-window',
@@ -240,6 +292,25 @@ export class VetOnDemandController {
 			container: window,
 			initialZoomState: null,
 			imageSize: 'cover',
+			fullScreen: false,
+			loop: false,
+			linkImages: true,
+			duration: 300,
+			setTitle: '',
+			separator2: '/',
+			setIndex: 0,
+			firstImage: 0,
+			lastImage: false,
+			currentImage: false,
+			initialized: false,
+			timer: false,
+			timerDebounce: false
+		};
+
+		this.configalt = {
+			container: window,
+			initialZoomState: null,
+			imageSize: 'contain',
 			fullScreen: false,
 			loop: false,
 			linkImages: true,

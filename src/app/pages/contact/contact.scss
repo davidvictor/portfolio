@@ -1,15 +1,5 @@
-.lion {
-	background-image:    url(../assets/images/lion-chopped-fade.svg);
-	background-size:     contain;
-	background-repeat:   no-repeat;
-	background-position: 0 bottom;
-}
 
-
-
-
-
-.la {
+.palms2 {
 	position: absolute;
 	top:      0;
 	left:     0;
@@ -24,10 +14,10 @@
 		top:                 0;
 		left:                0;
 		position:            absolute;
-		background-image:     url(../assets/images/la.jpg);
+		background-image:    url(../assets/images/palms.jpg);
 		background-size:     cover;
 		background-repeat:   no-repeat;
-		background-position: bottom;
+		background-position: 0% 20%;
 	}
 	&:after {
 		//content:             "";
@@ -65,11 +55,5 @@
 		background-position: center center;
 		//
 	}
-}
-
-.about-content {
-	z-index:        5;
-	mix-blend-mode: multiply;
-	opacity:        0.9;
 }
 

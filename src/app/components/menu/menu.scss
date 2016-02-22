@@ -40,7 +40,7 @@ vertical-menu {
 			line-height: 1;
 			span span {
 				font-weight: 700;
-				@include roar-fontsize(1.2rem, all);
+				//@include roar-fontsize(1.2rem, all);
 			}
 			@include roar-fontsize('epsilon', all);
 			@include media('<=medium') {
@@ -55,9 +55,12 @@ vertical-menu {
 		}
 	}
 	.vertical.menu-bar {
+		ul {
+			transform: translate3d(0, 0, 0);
+		}
 		li {
 			flex-flow: column nowrap;
-
+			transform: translate3d(0, 0, 0);
 			 > a {
 				 @include roar-fontsize('theta', all);
 				 @include media('<=medium') {
@@ -65,10 +68,13 @@ vertical-menu {
 					 font-weight: 300;
 				 }
 				 font-family:  map-get($headingtype, font-family);
-				 font-weight: 700;
-				 font-style: italic;
-				 text-transform: uppercase;
-				 letter-spacing: 0.08rem;
+				 //font-family: $brandon;
+				 font-weight: 300;
+				 font-style: normal;
+				 //text-transform: uppercase;
+				 text-transform: lowercase;
+				 letter-spacing: 0.15rem;
+				 transform: translate3d(0, 0, 0);
 				 @include media('<=medium') {
 					 padding:3rem 2rem;
 				 }
@@ -79,7 +85,7 @@ vertical-menu {
 				}
 				&:hover {
 					> a {
-						transform: translateX(0);
+						transform: translate3d(0, 0, 0);
 					}
 				}
 			}
@@ -88,7 +94,7 @@ vertical-menu {
 			}
 			&:hover {
 				> a {
-					transform: translateX(.1rem);
+					transform: translate3d(.1rem, 0, 0);
 				}
 			}
 		}
@@ -98,6 +104,7 @@ vertical-menu {
 				padding-top:    $menubar-item-padding * (2/3);
 				padding-bottom: $menubar-item-padding * (2/3);
 				@include roar-fontsize('theta', all);
+				font-family: $brandon;
 				@include media('<=medium') {
 					padding:2rem 2rem;
 					font-size: 1.5rem !important;
@@ -165,12 +172,166 @@ vertical-menu {
 				display: inline-block;
 				font-family:           map-get($headingtype, font-family);
 				font-style:            italic;
-				@include roar-fontsize('epsilon', all);
+				@include roar-fontsize('zeta', all);
 				font-weight: 700;
 				letter-spacing: 1px;
 				color: $black;
-				@include longTextShadow (white,45,2,0,0,0,0,4px,$black,0.2,1px);
+				@include longTextShadow (white,-45,2,0,0,0,0,4px,$black,0.2,1px);
 			}
 		}
 	}
+}
+
+.geo {
+	background-size:     contain;
+	background-repeat:   no-repeat;
+	background-position: center center;
+	height:2.5rem;
+	width: 2.5rem;
+}
+
+
+.geo-01 {
+	background-image: url(../assets/images/geo/geo-01.svg);
+}
+.geo-02 {
+	background-image: url(../assets/images/geo/geo-02.svg);
+}
+.geo-03 {
+	background-image: url(../assets/images/geo/geo-03.svg);
+}
+.geo-04 {
+	background-image: url(../assets/images/geo/geo-04.svg);
+}
+.geo-05 {
+	background-image: url(../assets/images/geo/geo-05.svg);
+}
+.geo-06 {
+	background-image: url(../assets/images/geo/geo-06.svg);
+}
+.geo-07 {
+	background-image: url(../assets/images/geo/geo-07.svg);
+}
+.geo-08 {
+	background-image: url(../assets/images/geo/geo-08.svg);
+}
+.geo-09 {
+	background-image: url(../assets/images/geo/geo-09.svg);
+}
+.geo-10 {
+	background-image: url(../assets/images/geo/geo-10.svg);
+}
+.geo-11 {
+	background-image: url(../assets/images/geo/geo-11.svg);
+}
+.geo-12 {
+	background-image: url(../assets/images/geo/geo-12.svg);
+}
+.geo-13 {
+	background-image: url(../assets/images/geo/geo-13.svg);
+}
+.geo-14 {
+	background-image: url(../assets/images/geo/geo-14.svg);
+}
+.geo-15 {
+	background-image: url(../assets/images/geo/geo-15.svg);
+}
+.geo-16 {
+	background-image: url(../assets/images/geo/geo-16.svg);
+}
+.geo-17 {
+	background-image: url(../assets/images/geo/geo-17.svg);
+}
+.geo-18 {
+	background-image: url(../assets/images/geo/geo-18.svg);
+}
+.geo-19 {
+	background-image: url(../assets/images/geo/geo-19.svg);
+}
+.geo-20 {
+	background-image: url(../assets/images/geo/geo-20.svg);
+}
+.geo-21 {
+	background-image: url(../assets/images/geo/geo-21.svg);
+}
+.geo-22 {
+	background-image: url(../assets/images/geo/geo-22.svg);
+}
+.geo-23 {
+	background-image: url(../assets/images/geo/geo-23.svg);
+}
+.geo-24 {
+	background-image: url(../assets/images/geo/geo-24.svg);
+}
+.geo-25 {
+	background-image: url(../assets/images/geo/geo-25.svg);
+}
+.geo-26 {
+	background-image: url(../assets/images/geo/geo-26.svg);
+}
+.geo-27 {
+	background-image: url(../assets/images/geo/geo-27.svg);
+}
+.geo-28 {
+	background-image: url(../assets/images/geo/geo-28.svg);
+}
+.geo-29 {
+	background-image: url(../assets/images/geo/geo-29.svg);
+}
+.geo-30 {
+	background-image: url(../assets/images/geo/geo-30.svg);
+}
+.geo-31 {
+	background-image: url(../assets/images/geo/geo-31.svg);
+}
+.geo-32 {
+	background-image: url(../assets/images/geo/geo-32.svg);
+}
+.geo-33 {
+	background-image: url(../assets/images/geo/geo-33.svg);
+}
+.geo-34 {
+	background-image: url(../assets/images/geo/geo-34.svg);
+}
+.geo-35 {
+	background-image: url(../assets/images/geo/geo-35.svg);
+}
+.geo-36 {
+	background-image: url(../assets/images/geo/geo-36.svg);
+}
+.geo-37 {
+	background-image: url(../assets/images/geo/geo-37.svg);
+}
+.geo-38 {
+	background-image: url(../assets/images/geo/geo-38.svg);
+}
+.geo-39 {
+	background-image: url(../assets/images/geo/geo-39.svg);
+}
+.geo-40 {
+	background-image: url(../assets/images/geo/geo-40.svg);
+}
+.geo-41 {
+	background-image: url(../assets/images/geo/geo-41.svg);
+}
+.geo-42 {
+	background-image: url(../assets/images/geo/geo-42.svg);
+}
+.geo-43 {
+	background-image: url(../assets/images/geo/geo-43.svg);
+}
+.geo-44 {
+	background-image: url(../assets/images/geo/geo-44.svg);
+}
+.geo-45 {
+	background-image: url(../assets/images/geo/geo-45.svg);
+}
+.geo-46 {
+	background-image: url(../assets/images/geo/geo-46.svg);
+}
+.geo-47 {
+	background-image: url(../assets/images/geo/geo-47.svg);
+}
+.geo-48 {
+	background-image: url(../assets/images/geo/geo-48.svg);
 }
