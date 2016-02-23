@@ -33,22 +33,22 @@ export class VetOnDemandController {
 		this.ios = [
 			{
 				screen: 'receipt',
-				src: 'assets/images/vetondemand/renders-v2/receipt-gold-front.png',
+				src: 'assets/images/vetondemand/renders-v2/full/receipt-gold-front.png',
 				direction: 'left'
 			},
 			{
 				screen: 'home',
-				src: 'assets/images/vetondemand/renders-v2/home-gold-front.png',
+				src: 'assets/images/vetondemand/renders-v2/full/home-gold-front.png',
 				direction: 'left'
 			},
 			{
 				screen: 'profile-vet',
-				src: 'assets/images/vetondemand/renders-v2/profile-vet-gold-front.png',
+				src: 'assets/images/vetondemand/renders-v2/full/profile-vet-gold-front.png',
 				direction: 'right'
 			},
 			{
 				screen: 'signup',
-				src: 'assets/images/vetondemand/renders-v2/signup-gold-front.png',
+				src: 'assets/images/vetondemand/renders-v2/full/signup-gold-front.png',
 				direction: 'right'
 			}
 		];

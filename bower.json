@@ -23,7 +23,7 @@
     "sass-maps-plus": "git@github.com:lunelson/sass-maps-plus.git#master",
     "sassy-lists": "git@github.com:at-import/SassyLists.git#master",
     "mathsass": "^0.9.5",
-    "modular-scale": "^2.1.1",
+    "modular-scale": "git://github.com/davidvictor/modularscale-sass#master",
     "sass-reset": "git://github.com/davidvictor/sass-reset.git#master",
     "sass-helpers": "git://github.com/davidvictor/sass-helpers.git#master",
     "sass-typography": "git://github.com/davidvictor/sass-typography.git#master",
