@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="361px" height="275px" viewBox="0 0 361 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.179897023 L366.653659,0.179897023 L366.653659,275.352586 L0,275.352586 L0,0.179897023 Z"></path>
+        <path id="path-3" d="M0,0.179897023 L366.653659,0.179897023 L366.653659,275.352586 L0,275.352586 L0,0.179897023 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="VetOnDemand" sketch:type="MSArtboardGroup" transform="translate(-742.000000, -1322.000000)">
+            <g id="Page-1" sketch:type="MSLayerGroup" transform="translate(735.427838, 1321.171748)">
+                <path d="M25.6659356,206.526372 L329.833194,206.526372 M25.6659356,169.999933 L329.833194,169.999933 M25.6659356,133.054959 L329.833194,133.054959 M25.6659356,96.1099845 L329.833194,96.1099845 M25.6659356,59.5835461 L329.833194,59.5835461 M25.6659356,22.6385718 L329.833194,22.6385718" id="Stroke-1" stroke="#989A9C" stroke-width="0.474" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M329.832835,243.470245 L329.832835,22.6393061" id="Stroke-2" stroke="#989A9C" stroke-width="0.474" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M329.832835,243.470245 L331.897225,243.470245 M329.832835,218.701362 L331.897225,218.701362 M329.832835,194.351014 L331.897225,194.351014 M329.832835,170.000667 L331.897225,170.000667 M329.832835,145.229949 L331.897225,145.229949 M329.832835,120.879602 L331.897225,120.879602 M329.832835,96.1088831 L331.897225,96.1088831 M329.832835,71.7585361 L331.897225,71.7585361 M329.832835,46.9896531 L331.897225,46.9896531 M329.832835,22.6393061 L331.897225,22.6393061" id="Stroke-3" stroke="#989A9C" stroke-width="0.474" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M25.6659356,243.470245 L25.6659356,22.6393061" id="Stroke-4" stroke="#989A9C" stroke-width="0.474" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M25.6659356,243.470245 L329.833194,243.470245" id="Stroke-5" stroke="#989A9C" stroke-width="0.474" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M40.9361405,79.3162303 L71.4783454,86.8737409 L102.018755,88.5533917 L132.146287,84.7737186 L162.686697,89.8126709 L193.227106,78.0569511 L223.354638,131.376226 L253.895048,145.650504 L284.435458,156.146945 L314.975867,169.160108" id="Stroke-6" stroke="#5B308B" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M40.9361405,192.25191 L71.4783454,195.19084 L102.018755,199.809421 L132.146287,200.648328 L162.686697,202.748351 L193.227106,193.511189 L223.354638,142.710473 L253.895048,139.771543 L284.435458,117.100846 L314.975867,54.5462459" id="Stroke-7" stroke="#F4A621" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.845,2.845" sketch:type="MSShapeGroup"></path>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="336.280375" y="243.981469">0</tspan>
+                </text>
+                <text id="%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="342.274265" y="243.981469">%</tspan>
+                </text>
+                <text id="5" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="336.280375" y="219.411544">5</tspan>
+                </text>
+                <text id="%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="341.404729" y="219.411544">%</tspan>
+                </text>
+                <text id="10%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.006" fill="#221F20">
+                    <tspan x="336.314143" y="194.833032">10</tspan>
+                    <tspan x="345.073158" y="194.833032">%</tspan>
+                </text>
+                <text id="15%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="336.314143" y="170.271695">15</tspan>
+                    <tspan x="344.229206" y="170.271695">%</tspan>
+                </text>
+                <text id="20%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.006" fill="#221F20">
+                    <tspan x="336.314143" y="145.70177">20</tspan>
+                    <tspan x="347.043163" y="145.70177">%</tspan>
+                </text>
+                <text id="25%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="336.314143" y="121.140433">25</tspan>
+                    <tspan x="346.199211" y="121.140433">%</tspan>
+                </text>
+                <text id="30%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.006" fill="#221F20">
+                    <tspan x="336.314143" y="96.5705084">30</tspan>
+                    <tspan x="347.157603" y="96.5705084">%</tspan>
+                </text>
+                <text id="35%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="336.314143" y="72.0091715">35</tspan>
+                    <tspan x="346.272779" y="72.0091715">%</tspan>
+                </text>
+                <text id="40%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="336.314143" y="47.4392467">40</tspan>
+                    <tspan x="347.629712" y="47.4392467">%</tspan>
+                </text>
+                <text id="45%" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="336.314143" y="22.869322">45</tspan>
+                    <tspan x="346.78776" y="22.869322">%</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="243.998645">0</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="17.1436868" y="243.998645">.</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="19.0600434" y="243.998645">0</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="207.139464">0</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="17.1521289" y="207.139464">.</tspan>
+                </text>
+                <text id="5" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="19.0769276" y="207.139464">5</tspan>
+                </text>
+                <text id="1" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="170.288871">1</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="14.1298572" y="170.288871">.</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="16.0462138" y="170.288871">0</tspan>
+                </text>
+                <text id="1" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="133.429689">1</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="14.1298572" y="133.429689">.</tspan>
+                </text>
+                <text id="5" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="16.0462138" y="133.429689">5</tspan>
+                </text>
+                <text id="2" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="96.5876841">2</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="16.1728453" y="96.5876841">.</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="18.097644" y="96.5876841">0</tspan>
+                </text>
+                <text id="2" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="59.7370909">2</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="16.1644032" y="59.7370909">.</tspan>
+                </text>
+                <text id="5" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="18.0807598" y="59.7370909">5</tspan>
+                </text>
+                <text id="3" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="11.1666803" y="22.8779099">3</tspan>
+                </text>
+                <text id="." sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="16.2825926" y="22.8779099">.</tspan>
+                </text>
+                <text id="0" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" fill="#221F20">
+                    <tspan x="18.1989492" y="22.8779099">0</tspan>
+                </text>
+                <text id="2003" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="34.5090855" y="254.716319">200</tspan>
+                    <tspan x="50.9919812" y="254.716319">3</tspan>
+                </text>
+                <text id="2004" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="64.9512963" y="254.716319">200</tspan>
+                    <tspan x="81.515935" y="254.716319">4</tspan>
+                </text>
+                <text id="2005" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.005" fill="#221F20">
+                    <tspan x="95.4188335" y="254.716319">200</tspan>
+                    <tspan x="111.989472" y="254.716319">5</tspan>
+                </text>
+                <text id="2006" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="125.877928" y="254.716319">200</tspan>
+                    <tspan x="142.442567" y="254.716319">6</tspan>
+                </text>
+                <text id="2007" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="156.337024" y="254.716319">200</tspan>
+                    <tspan x="172.664608" y="254.716319">7</tspan>
+                </text>
+                <text id="2008" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="186.779234" y="254.716319">200</tspan>
+                    <tspan x="203.343873" y="254.716319">8</tspan>
+                </text>
+                <text id="2009" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.005" fill="#221F20">
+                    <tspan x="217.238329" y="254.716319">200</tspan>
+                    <tspan x="233.808968" y="254.716319">9</tspan>
+                </text>
+                <text id="2010" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="247.697424" y="254.716319">201</tspan>
+                    <tspan x="261.302969" y="254.716319">0</tspan>
+                </text>
+                <text id="2011" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="278.156519" y="254.716319">201</tspan>
+                    <tspan x="291.762064" y="254.716319">1</tspan>
+                </text>
+                <text id="2012" sketch:type="MSTextLayer" font-family="Gotham" font-size="8.17429209" font-weight="313" letter-spacing="-0.007" fill="#221F20">
+                    <tspan x="308.607172" y="254.716319">201</tspan>
+                    <tspan x="322.212717" y="254.716319">2</tspan>
+                </text>
+                <g id="Group-9" transform="translate(0.000000, 1.835684)">
+                    <mask id="mask-2" sketch:name="Clip 8" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-8"></g>
+                    <text id="%" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="178.317954">%</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="171.039086"> </tspan>
+                    </text>
+                    <text id="S" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="168.809291">S</tspan>
+                    </text>
+                    <text id="e" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="163.128015">e</tspan>
+                    </text>
+                    <text id="n" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="158.104571">n</tspan>
+                    </text>
+                    <text id="i" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="152.645419">i</tspan>
+                    </text>
+                    <text id="o" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="150.381452">o</tspan>
+                    </text>
+                    <text id="r" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="144.666002">r</tspan>
+                    </text>
+                    <text id="s" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="141.060741">s</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="137.01123"> </tspan>
+                    </text>
+                    <text id="W" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="134.781435">W</tspan>
+                    </text>
+                    <text id="i" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="125.084821">i</tspan>
+                    </text>
+                    <text id="t" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="122.820853">t</tspan>
+                    </text>
+                    <text id="h" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="119.147246">h</tspan>
+                    </text>
+                    <text id="o" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="113.688095">o</tspan>
+                    </text>
+                    <text id="u" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="107.972645">u</tspan>
+                    </text>
+                    <text id="t" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="102.513494">t</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="98.8398864"> </tspan>
+                    </text>
+                    <text id="a" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="96.6100921">a</tspan>
+                    </text>
+                    <text id="n" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="91.629364">n</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="86.1702127"> </tspan>
+                    </text>
+                    <text id="O" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="364.605245" y="83.9404184">O</tspan>
+                    </text>
+                    <text id="ﬀer" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" letter-spacing="-0.004" fill="#221F20">
+                        <tspan x="364.605245" y="76.6102903">ﬀe</tspan>
+                        <tspan x="375.306869" y="76.6102903">r</tspan>
+                    </text>
+                    <text id="A" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="156.532608">A</tspan>
+                    </text>
+                    <text id="ve" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="149.569841">ve</tspan>
+                    </text>
+                    <text id="r" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="139.30937">r</tspan>
+                    </text>
+                    <text id="a" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="135.755369">a</tspan>
+                    </text>
+                    <text id="ge" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="130.971136">ge</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="120.497083"> </tspan>
+                    </text>
+                    <text id="#" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="118.06225">#</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="111.859834"> </tspan>
+                    </text>
+                    <text id="O" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="109.877795">O</tspan>
+                    </text>
+                    <text id="ﬀe" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="102.564753">ﬀe</tspan>
+                    </text>
+                    <text id="r" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="91.0484215">r</tspan>
+                    </text>
+                    <text id="s" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Gotham" font-size="8.13183323" font-weight="313" fill="#221F20">
+                        <tspan x="7.1393086" y="87.9215836">s</tspan>
+                    </text>
+                </g>
+                <path d="M58.4588644,273.180054 L72.4913327,273.180054" id="Stroke-10" stroke="#5B308B" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <g id="Group-12" transform="translate(0.000000, 1.835684)">
+                    <mask id="mask-4" sketch:name="Clip 11" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-11"></g>
+                    <text id="#-" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="79.2185522" y="271.979298"># </tspan>
+                    </text>
+                    <text id="o" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="85.5841053" y="271.979298">o</tspan>
+                    </text>
+                    <text id="ﬀer" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" letter-spacing="-0.004" fill="#221F20">
+                        <tspan x="90.0042606" y="271.979298">ﬀe</tspan>
+                        <tspan x="98.4344045" y="271.979298">r</tspan>
+                    </text>
+                    <text id="s" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="101.524456" y="271.979298">s</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="104.660913" y="271.979298"> </tspan>
+                    </text>
+                    <text id="p" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="106.38795" y="271.979298">p</tspan>
+                    </text>
+                    <text id="e" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="110.933829" y="271.979298">e</tspan>
+                    </text>
+                    <text id="r" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="114.824624" y="271.979298">r</tspan>
+                    </text>
+                    <text id="-" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="117.616998" y="271.979298"> </tspan>
+                    </text>
+                    <text id="s" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="119.344034" y="271.979298">s</tspan>
+                    </text>
+                    <text id="e" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="122.480492" y="271.979298">e</tspan>
+                    </text>
+                    <text id="n" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="126.371287" y="271.979298">n</tspan>
+                    </text>
+                    <text id="i" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="130.59955" y="271.979298">i</tspan>
+                    </text>
+                    <text id="o" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="132.353054" y="271.979298">o</tspan>
+                    </text>
+                    <text id="r" sketch:type="MSTextLayer" mask="url(#mask-4)" font-family="Gotham" font-size="6.40709482" font-weight="313" fill="#221F20">
+                        <tspan x="136.779827" y="271.979298">r</tspan>
+                    </text>
+                </g>
+                <path d="M173.24704,273.180054 L186.86663,273.180054" id="Stroke-13" stroke="#F4A621" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.845,2.845" sketch:type="MSShapeGroup"></path>
+                <g id="Group-15" transform="translate(111.297561, 0.000000)" font-family="Gotham" fill="#221F20" sketch:type="MSTextLayer">
+                    <text id="%" font-size="6.40709482" font-weight="313">
+                        <tspan x="82.5336039" y="273.814982">%</tspan>
+                    </text>
+                    <text id="-" font-size="6.40709482" font-weight="313">
+                        <tspan x="88.1712871" y="273.814982"> </tspan>
+                    </text>
+                    <text id="s" font-size="6.40709482" font-weight="313">
+                        <tspan x="89.8983238" y="273.814982">s</tspan>
+                    </text>
+                    <text id="e" font-size="6.40709482" font-weight="313">
+                        <tspan x="93.0347814" y="273.814982">e</tspan>
+                    </text>
+                    <text id="n" font-size="6.40709482" font-weight="313">
+                        <tspan x="96.9255768" y="273.814982">n</tspan>
+                    </text>
+                    <text id="i" font-size="6.40709482" font-weight="313">
+                        <tspan x="101.153839" y="273.814982">i</tspan>
+                    </text>
+                    <text id="o" font-size="6.40709482" font-weight="313">
+                        <tspan x="102.907344" y="273.814982">o</tspan>
+                    </text>
+                    <text id="r" font-size="6.40709482" font-weight="313">
+                        <tspan x="107.334116" y="273.814982">r</tspan>
+                    </text>
+                    <text id="s" font-size="6.40709482" font-weight="313">
+                        <tspan x="110.12649" y="273.814982">s</tspan>
+                    </text>
+                    <text id="-" font-size="6.40709482" font-weight="313">
+                        <tspan x="113.262947" y="273.814982"> </tspan>
+                    </text>
+                    <text id="w" font-size="6.40709482" font-weight="313">
+                        <tspan x="114.989984" y="273.814982">w</tspan>
+                    </text>
+                    <text id="i" font-size="6.40709482" font-weight="313">
+                        <tspan x="120.693837" y="273.814982">i</tspan>
+                    </text>
+                    <text id="t" font-size="6.40709482" font-weight="313">
+                        <tspan x="122.453959" y="273.814982">t</tspan>
+                    </text>
+                    <text id="h" font-size="6.40709482" font-weight="313">
+                        <tspan x="125.305886" y="273.814982">h</tspan>
+                    </text>
+                    <text id="o" font-size="6.40709482" font-weight="313">
+                        <tspan x="129.540765" y="273.814982">o</tspan>
+                    </text>
+                    <text id="u" font-size="6.40709482" font-weight="313">
+                        <tspan x="133.974154" y="273.814982">u</tspan>
+                    </text>
+                    <text id="t" font-size="6.40709482" font-weight="313">
+                        <tspan x="138.209034" y="273.814982">t</tspan>
+                    </text>
+                    <text id="-" font-size="6.40709482" font-weight="313">
+                        <tspan x="141.06096" y="273.814982"> </tspan>
+                    </text>
+                    <text id="a" font-size="6.40709482" font-weight="313">
+                        <tspan x="142.794614" y="273.814982">a</tspan>
+                    </text>
+                    <text id="n" font-size="6.40709482" font-weight="313">
+                        <tspan x="146.658941" y="273.814982">n</tspan>
+                    </text>
+                    <text id="-" font-size="6.40709482" font-weight="313">
+                        <tspan x="150.893821" y="273.814982"> </tspan>
+                    </text>
+                    <text id="o" font-size="6.40709482" font-weight="313">
+                        <tspan x="152.627475" y="273.814982">o</tspan>
+                    </text>
+                    <text id="ﬀer" font-size="6.40709482" font-weight="313" letter-spacing="-0.003">
+                        <tspan x="157.060864" y="273.814982">ﬀe</tspan>
+                        <tspan x="165.493008" y="273.814982">r</tspan>
+                    </text>
+                    <text id="Veterinary-School-Seniors" font-size="9.8092204" font-weight="420" letter-spacing="-0.39298">
+                        <tspan x="0.141994146" y="8.46828296">V</tspan>
+                        <tspan x="6.41928402" y="8.46828296">e</tspan>
+                        <tspan x="12.3440531" y="8.46828296" letter-spacing="-0.08421">t</tspan>
+                        <tspan x="16.1442944" y="8.46828296">erinary School Seniors</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
