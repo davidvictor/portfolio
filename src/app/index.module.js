@@ -13,7 +13,7 @@ import { repeatComplete } from './helpers/repeatcomplete.directive';
 import { repeatEndEmit } from './helpers/repeatend.directive';
 
 
-angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting', 'foundation.dynamicRouting.animations', 'chocolat', 'hj.scrollMagic', 'duScroll', 'ngDisableScroll'])
+angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'foundation', 'foundation.dynamicRouting', 'foundation.dynamicRouting.animations', 'chocolat', 'hj.scrollMagic', 'duScroll', 'ngDisableScroll','angular-google-analytics'])
 	.config(config)
 	.config(routerConfig)
 	.run(runBlock)
