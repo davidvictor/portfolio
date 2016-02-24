@@ -52,7 +52,7 @@ vertical-menu {
 					display: none;
 				}
 			}
-		}
+		} 
 	}
 	.vertical.menu-bar {
 		ul {
@@ -158,7 +158,7 @@ vertical-menu {
 	button {
 		appearance: none;
 		padding: 1rem 1.5rem;
-
+display: block;
 		&:hover {
 			cursor: pointer;
 		}

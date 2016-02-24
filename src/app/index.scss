@@ -61,10 +61,10 @@ $include-css: (
 
 $im-breakpoints: (
 									 small: rem-calc(0),
-									 medium: rem-calc(640),
-									 large: rem-calc(1200),
-									 huge: rem-calc(1440),
-									 giant: rem-calc(1920),
+									 medium: 640px,
+									 large: 1200px,
+									 huge: 1440px,
+									 giant: 1920px,
 								 );
 
 $global-radius: 3px;
@@ -914,6 +914,11 @@ h6.tiny {
 }
 
 .chocolat-loader {
+	height: 78px;
+	width: 78px;
+	margin-right:0;
+	margin-left:0;
+	transform: translate3d(-50%,-50%,0);
 	background: url(../assets/images/chocolat/loader.gif);
 }
 

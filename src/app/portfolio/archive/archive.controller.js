@@ -78,7 +78,7 @@ export class ArchiveController {
 			{
 				id: 'gro',
 				client: 'Gro Furniture',
-				role: 'Branding / Art Direction + Web',
+				role: 'Branding / Art Direction / Web',
 				images: [
 					{
 						src: 'gro.jpg',

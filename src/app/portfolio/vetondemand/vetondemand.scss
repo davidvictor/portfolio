@@ -250,12 +250,12 @@ span.section-subheading {
 		z-index: 2;
 		&.phone-call {
 			right: 8rem;
-			bottom: 0;
+			bottom: -2rem;
 			transform:           translate3d(0, 11%, 0);
 		}
 		&.phone-history {
 			right: 18rem;
-			bottom: 0;
+			bottom: -3rem;
 			transform:           translate3d(0, 22%, 0);
 			@include media('<large') {
 				right: 16rem;

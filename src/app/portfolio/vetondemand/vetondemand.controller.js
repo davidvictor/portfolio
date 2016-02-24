@@ -73,7 +73,7 @@ export class VetOnDemandController {
 
 		this.web = [
 			{
-				src: 'assets/images/vetondemand/web/dashboard@2x.jpg',
+				src: 'assets/images/vetondemand/web/Dashboard@2x.jpg',
 				thumb:'assets/images/vetondemand/web/dashboard-left.png'
 			},
 			{
