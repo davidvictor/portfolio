@@ -284,7 +284,7 @@ $menu-width: 16rem;
 
 $menubar-fontsize: 1rem;
 $menubar-background: transparent;
-$menubar-background-hover:transparent;
+$menubar-background-hover: transparent;
 $menubar-background-active: $menubar-background-hover;
 $menubar-color: $black;
 $menubar-color-hover: $menubar-color;
@@ -476,46 +476,38 @@ body {
 	@include breakpoint(medium) {
 		padding-left: 3rem;
 	}
-	&::-webkit-scrollbar              {
+	&::-webkit-scrollbar {
 		//background: transparent;
 		display: none;
 	}
-	&::-webkit-scrollbar-button       {
-
+	&::-webkit-scrollbar-button {
 	}
-	&::-webkit-scrollbar-track        {
-
+	&::-webkit-scrollbar-track {
 	}
-	&::-webkit-scrollbar-track-piece  {
-
+	&::-webkit-scrollbar-track-piece {
 	}
-	&::-webkit-scrollbar-thumb        {
-
+	&::-webkit-scrollbar-thumb {
 	}
-	&::-webkit-scrollbar-corner       {
-
+	&::-webkit-scrollbar-corner {
 	}
-	&::-webkit-resizer                {
-
+	&::-webkit-resizer {
 	}
 }
-
 
 .menu-container {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	top:      0;
+	left:     0;
+	width:    100%;
+	height:   100%;
 	@include breakpoint(medium) {
 		position: relative;
-		top: 0;
-		left: 0;
-		width: initial;
-		height: initial;
+		top:      0;
+		left:     0;
+		width:    initial;
+		height:   initial;
 	}
 }
-
 
 a {
 	text-decoration: none;
@@ -623,44 +615,116 @@ h6.tiny {
 	-ms-overflow-style:         -ms-autohiding-scrollbar;
 }
 
-.self-stretch.self-stretch.self-stretch {
-	align-self: stretch;
+.self-stretch {
+	@at-root {
+		&#{&} {
+			align-self: stretch;
+		}
+	}
 }
 
-.self-center.self-center.self-center {
-	align-self: center;
+.self-center {
+	@at-root {
+		&#{&} {
+			align-self: center;
+		}
+	}
 }
 
-.self-end.self-end.self-end {
-	align-self: flex-end;
+.self-end {
+	@at-root {
+		&#{&} {
+			align-self: flex-end;
+		}
+	}
 }
 
-.content-center.content-center.content-center {
-	align-content: center;
-}
-
-.justify-start.justify-start.justify-start {
-	justify-content: flex-start;
-}
-
-.justify-center {
-	justify-content: center;
+.content-center {
+	@at-root {
+		&#{&} {
+			align-content: center;
+		}
+	}
 }
 
 .justify-start {
-	justify-content: flex-start;
+	@at-root {
+		&#{&} {
+			justify-content: flex-start;
+		}
+	}
+}
+
+.justify-center {
+	@at-root {
+		&#{&} {
+			justify-content: center;
+		}
+	}
+}
+
+.justify-start {
+	@at-root {
+		&#{&} {
+			justify-content: flex-start;
+		}
+	}
 }
 
 .justify-end {
-	justify-content: flex-end;
+	@at-root {
+		&#{&} {
+			justify-content: flex-end;
+		}
+	}
 }
 
-.items-start.items-start.items-start {
-	align-items: flex-start;
+.items-start {
+	@at-root {
+		&#{&} {
+			align-items: flex-start;
+		}
+	}
 }
 
-.items-center.items-center.items-center {
-	align-items: center;
+.items-end {
+	@at-root {
+		&#{&} {
+			align-items: flex-end;
+		}
+	}
+}
+
+
+.items-center {
+	@at-root {
+		&#{&} {
+			align-items: center;
+		}
+
+	}
+
+}
+
+.small {
+	&-items-center {
+		@at-root {
+			&#{&} {
+				@include media('<medium') {
+					align-items: center;
+				}
+			}
+		}
+	}
+	&-items-end {
+		@at-root {
+			&#{&} {
+				@include media('<medium') {
+					align-items: end;
+				}
+			}
+		}
+	}
 }
 
 [sm-tween] {
@@ -706,17 +770,6 @@ h6.tiny {
 	);
 }
 
-.chocolat-overlay {
-	background-color: $black;
-	opacity:          0.95;
-}
-.chocolat-wrapper {
-	z-index: 200;
-}
-.chocolat-wrapper .chocolat-bottom {
-	background: rgba(0, 0, 0, 0.0);
-}
-
 .grid-content {
 	overflow: initial;
 }
@@ -729,11 +782,11 @@ h6.tiny {
 }
 
 .stack-logo {
-	display: block;
-	padding-bottom: 100%;
-	background-size: cover;
+	display:             block;
+	padding-bottom:      100%;
+	background-size:     cover;
 	background-position: center center;
-	background-repeat: no-repeat;
+	background-repeat:   no-repeat;
 	&.angular {
 		background-image: url('../assets/images/stack/angular.png');
 	}
@@ -846,6 +899,52 @@ h6.tiny {
 		background-image: url('../assets/images/stack/stripe.png');
 	}
 }
+
+.chocolat-overlay {
+	background-color: $black;
+	opacity:          0.95;
+}
+
+.chocolat-wrapper {
+	z-index: 200;
+}
+
+.chocolat-wrapper .chocolat-bottom {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+.chocolat-loader {
+	background: url(../assets/images/chocolat/loader.gif);
+}
+
+.chocolat-wrapper .chocolat-left {
+	background: url(../assets/images/chocolat/left.png) 50% 50% no-repeat;
+}
+
+.chocolat-wrapper .chocolat-right {
+	background: url(../assets/images/chocolat/right.png) 50% 50% no-repeat;
+}
+
+.chocolat-wrapper .chocolat-close {
+	background: url(../assets/images/chocolat/close.png) 50% 50% no-repeat;
+}
+
+.chocolat-wrapper .chocolat-fullscreen {
+	background: url(../assets/images/chocolat/fullscreen.png) 50% 50% no-repeat;
+}
+
+.chocolat-cover .chocolat-content .chocolat-right {
+	background: url(../assets/images/chocolat/right-compact.png) 100% 50% no-repeat;
+}
+
+.chocolat-cover .chocolat-content .chocolat-left {
+	background: url(../assets/images/chocolat/left-compact.png) 0% 50% no-repeat;
+}
+
+.chocolat-cover .chocolat-content .chocolat-close {
+	background: url(../assets/images/chocolat/close-compact.png) 0% center no-repeat;
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

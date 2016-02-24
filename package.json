@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.0.0",
   "dependencies": {
-    "angular-scroll-magic": "0.0.1",
     "script-loader": "^0.6.1"
   },
   "scripts": {

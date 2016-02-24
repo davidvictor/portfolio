@@ -2,6 +2,10 @@
     VETONDEMAND
 <|--===============================================================================-->
 
+<span webfont-loader='eames'></span>
+<span webfont-loader='brandon'></span>
+<span webfont-loader='gotham'></span>
+<span webfont-loader='proxima'></span>
 <!--Menu Include-->
 <!--suppress ALL -->
 <scroll-menu></scroll-menu>
@@ -14,11 +18,18 @@
 				<img src="assets/images/vetondemand/brand/logo-h-white.svg" width="200px" alt="">
 			</div>
 		</div>
+		<span sm-scene="phone" duration="150%" offset="0" trigger-hook="0"></span>
+
+		<div class="hero-phone-container phone-history" sm-tween="phone" vars="{yPercent:'20%'}">
+			<span class="render-huge history gold right"></span>
+		</div>
+		<span sm-scene="phone" duration="150%" offset="0" trigger-hook="0"></span>
+
+		<div class="hero-phone-container phone-call" sm-tween="phone" vars="{yPercent:'20%'}">
+			<span class="render-huge call gold right"></span>
+		</div>
 	</div>
-	<span sm-scene="phone" duration="150%" offset="0" trigger-hook="0"></span>
-	<span class="render-huge history gold right" sm-tween="phone" vars="{yPercent:'20%'}"></span>
-	<span sm-scene="phone" duration="150%" offset="0" trigger-hook="0"></span>
-	<span class="render-huge call gold right" sm-tween="phone" vars="{yPercent:'20%'}"></span>
+
 
 </div>
 <!--------------------------------------------------------------------------------
@@ -68,7 +79,7 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block wrap noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
 			<div class="grid-content small-12 text-center">
-				<img class="research-chart" src="assets/images/vetondemand/chart-2.svg" width="400px" alt="" class="fade-in">
+				<img class="research-chart" src="assets/images/vetondemand/chart-2.png" width="400px" alt="" class="fade-in">
 			</div>
 			<div class="grid-content small-12 text-center">
 
@@ -84,13 +95,14 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block wrap noscroll align-center items-center section-container small-12 medium-10 large-8 p-b-l">
 			<div class="grid-content small-12 text-center">
-				<img class="research-chart" src="assets/images/vetondemand/chart-1.svg" width="400px" alt="">
+				<img class="research-chart" src="assets/images/vetondemand/chart-1.png" width="400px" alt="">
 			</div>
 			<div class="grid-content small-12 text-center">
 
 				<h6 class="section-heading centered block">incomes are falling</h6>
 
-				<p class="small">Over the past decade, veterinarians have seen their wages fall. Increasing prices from pharmaceutical companies and the ever advancing march of technology have cut even deeper into&nbsp;practices&nbsp;nationwide.
+				<p class="small">Over the past decade, veterinarians have seen their wages fall. Increasing prices from pharmaceutical companies and the ever advancing march of
+				                 technology have cut even deeper into&nbsp;practices&nbsp;nationwide.
 				</p>
 			</div>
 
@@ -307,7 +319,7 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block phone-render-container wrap noscroll align-spaced items-center section-container small-12 medium-12 large-10" chocolat config="vetondemand.configalt" instance="instance">
 			<div class="grid-block small-12 medium-3" ng-repeat="render in vetondemand.ios track by $index">
-				<div class="grid-content">
+				<div class="grid-content collapse">
 					<a href="{{render.src}}" class="render-large {{render.screen}} gold {{render.direction}} chocolat-image"></a>
 				</div>
 			</div>
@@ -326,7 +338,7 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block phone-render-container wrap noscroll align-spaced items-center section-container small-12 medium-12 large-10" chocolat config="vetondemand.configalt" instance="instance">
 			<div class="grid-block small-12 medium-3" ng-repeat="arender in vetondemand.android track by $index">
-				<div class="grid-content">
+				<div class="grid-content collapse">
 					<a href="{{arender.src}}" class="render-large android android-{{arender.screen}} {{arender.direction}} chocolat-image"></a>
 				</div>
 			</div>
@@ -358,7 +370,7 @@
 	<div class="grid-block align-center self-stretch small-12 noscroll section-block">
 		<div class="grid-block phone-render-container wrap noscroll align-spaced items-center section-container small-12 medium-12 large-10" chocolat config="vetondemand.configalt" instance="instance">
 			<div class="grid-block small-12 medium-6" ng-repeat="screen in vetondemand.web track by $index">
-				<div class="grid-content">
+				<div class="grid-content collapse">
 					<a href="{{screen.src}}" class="web-large chocolat-image" style="background-image: url({{screen.thumb}});"></a>
 				</div>
 			</div>
@@ -395,11 +407,11 @@
 		</div>
 	</div>
 	<!--<div class="grid-block align-center self-stretch small-12 noscroll section-block">-->
-		<!--<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">-->
-			<!--<div class="grid-content text-center fade-in">-->
-				<!--<h6 class="section-heading">Collateral</h6>-->
-			<!--</div>-->
-		<!--</div>-->
+	<!--<div class="grid-block noscroll align-center items-center section-container small-12 medium-10 large-8">-->
+	<!--<div class="grid-content text-center fade-in">-->
+	<!--<h6 class="section-heading">Collateral</h6>-->
+	<!--</div>-->
+	<!--</div>-->
 	<!--</div>-->
 	<div class="grid-block align-center self-stretch small-12 noscroll  section-block">
 		<div class="grid-block wrap noscroll align-center items-center section-container small-10 medium-9 large-10">

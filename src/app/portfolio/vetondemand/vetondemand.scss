@@ -80,7 +80,7 @@
 
 .blockquote {
 	font-family: $eames;
-	font-weight: 200;
+	font-weight: 300;
 	text-transform: none;
 	//text-transform: capitalize !important;
 }
@@ -123,7 +123,7 @@ span.section-subheading {
 		height: $a;
 	} @else {
 		width:  $a;
-		height: $a * 2.96;
+		padding-bottom: 296%;
 	}
 }
 
@@ -133,7 +133,7 @@ span.section-subheading {
 		height: $a;
 	} @else {
 		width:  $a;
-		height: $a * 1.77;
+		padding-bottom: 177%;
 	}
 }
 
@@ -144,7 +144,7 @@ span.section-subheading {
 		height: $a;
 	} @else {
 		width:  $a;
-		height: $a * .63;
+		padding-bottom: 63%;
 	}
 }
 
@@ -245,18 +245,21 @@ span.section-subheading {
 }
 
 #hero {
-	span[class*='render'] {
+	[class*='hero-phone'] {
 		position: absolute;
 		z-index: 2;
-		&.call {
+		&.phone-call {
 			right: 8rem;
 			bottom: 0;
 			transform:           translate3d(0, 11%, 0);
 		}
-		&.history {
+		&.phone-history {
 			right: 18rem;
 			bottom: 0;
 			transform:           translate3d(0, 22%, 0);
+			@include media('<large') {
+				right: 16rem;
+			}
 		}
 	}
 }

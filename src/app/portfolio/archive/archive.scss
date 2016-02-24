@@ -47,7 +47,7 @@ $lax-width-sm: 95vw;
 		display:             none;
 		overflow:            hidden;
 		position:            absolute;
-		top:                 0;
+		bottom:                 0;
 		left:                0;
 		transform:           translate3d(0, 0, 0);
 		backface-visibility: hidden;
@@ -95,7 +95,6 @@ $lax-width-sm: 95vw;
 		font-weight: 300;
 		letter-spacing: .08rem;
 		line-height:    1.5rem;
-		margin-top:     .5rem;
 	}
 	.archive-data {
 		font-weight:    700;

@@ -12,23 +12,22 @@
     "angular-resource": "~1.4.2",
     "angular-ui-router": "~0.2.15",
     "angular-scroll": "^1.0.0",
-    "animate.css": "~3.4.0",
     "angular": "~1.5.0",
     "angular-scroll-magic": "git://github.com/davidvictor/angular-scroll-magic.git",
     "ng-chocolat": "git://github.com/davidvictor/ng-chocolat.git",
     "foundation-apps": "^1.2.0",
-    "devices.css": "*",
     "include-media": "git://github.com/davidvictor/include-media.git",
     "include-media-spread": "git://github.com/davidvictor/include-media-spread.git",
-    "sass-maps-plus": "git@github.com:lunelson/sass-maps-plus.git",
-    "sassy-lists": "git@github.com:at-import/SassyLists.git",
+    "sass-maps-plus": "git://github.com/lunelson/sass-maps-plus.git#master",
+    "sassy-lists": "git://github.com/at-import/SassyLists.git",
     "mathsass": "^0.9.5",
-    "modular-scale": "git@github.com/davidvictor/modularscale-sass",
-    "sass-reset": "git@github.com/davidvictor/sass-reset.git",
-    "sass-helpers": "git@github.com/davidvictor/sass-helpers.git",
-    "sass-typography": "git@github.com/davidvictor/sass-typography.git",
-    "sass-utility-variables": "git@github.com/davidvictor/sass-utility-variables.git",
-    "ng-disable-scroll": "^0.1.1"
+    "modular-scale": "git://github.com/davidvictor/modularscale-sass",
+    "sass-reset": "git://github.com/davidvictor/sass-reset.git",
+    "sass-helpers": "git://github.com/davidvictor/sass-helpers.git",
+    "sass-typography": "git://github.com/davidvictor/sass-typography.git",
+    "sass-utility-variables": "git://github.com/davidvictor/sass-utility-variables.git",
+    "ng-disable-scroll": "^0.1.1",
+    "angular-google-analytics": "^1.1.6"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.2"
@@ -36,7 +35,8 @@
   "resolutions": {
     "jquery": "~2.1.4",
     "angular": "~1.4.2",
-    "sass-maps-plus": "e4d32a1dc2"
+    "sass-maps-plus": "e4d32a1dc2",
+    "sassy-lists": "2.2.4"
   },
   "overrides": {
     "ng-chocolat": {
@@ -48,6 +48,11 @@
       "main": [
         "./scrollmagic/minified/ScrollMagic.min.js",
         "./scrollmagic/minified/plugins/animation.gsap.min.js"
+      ]
+    },
+    "angular-scroll-magic": {
+      "main": [
+        "./angular-scroll-magic.js"
       ]
     }
   }
