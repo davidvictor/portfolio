@@ -73,8 +73,8 @@
 }
 
 .research-chart {
-	margin-left:3rem;
-	margin-right:3rem;
+//	margin-left:3rem;
+	//margin-right:3rem;
 	margin-bottom:3rem;
 }
 
@@ -236,8 +236,9 @@ span.section-subheading {
 	transform:           translate3d(0, 0, 0);
 	backface-visibility: hidden;
 	background-size:     cover;
-	background-position: center center;
+	background-position: left center;
 	background-repeat:   no-repeat;
+
 }
 
 #overview > * {
@@ -248,6 +249,9 @@ span.section-subheading {
 	[class*='hero-phone'] {
 		position: absolute;
 		z-index: 2;
+		@include media('<large') {
+			display: none;
+		}
 		&.phone-call {
 			right: 8rem;
 			bottom: -2rem;
@@ -274,6 +278,10 @@ span.section-subheading {
 		margin:              auto;
 		height:              7rem;
 		width:               14rem;
+		@include media('<large') {
+			height:              7rem;
+			width:               14rem;
+		}
 	}
 	.block-fullscreen {
 		.hero-bg {

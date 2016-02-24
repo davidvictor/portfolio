@@ -7,7 +7,7 @@
 		margin-top: $spacing-giant;
 	}
 	@include media('<=medium') {
-		height:      auto;
+		height:      auto !important;
 		&:first-of-type {
 			margin-top: 6rem;
 		}

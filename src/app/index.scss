@@ -733,7 +733,48 @@ h6.tiny {
 			}
 		}
 	}
+	&-justify-center {
+		@at-root {
+			&#{&} {
+				@include media('<medium') {
+					justify-content: center;
+				}
+			}
+		}
+	}
 }
+
+
+.medium {
+	&-items-center {
+		@at-root {
+			&#{&} {
+				@include media('<large') {
+					align-items: center;
+				}
+			}
+		}
+	}
+	&-items-end {
+		@at-root {
+			&#{&} {
+				@include media('<large') {
+					align-items: end;
+				}
+			}
+		}
+	}
+	&-justify-center {
+		@at-root {
+			&#{&} {
+				@include media('<large') {
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+
 
 [sm-tween] {
 	will-change:         transform opacity;
