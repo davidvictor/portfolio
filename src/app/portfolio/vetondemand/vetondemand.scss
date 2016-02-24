@@ -79,9 +79,10 @@
 }
 
 .blockquote {
-	font-family: $eames;
+	font-family:  map-get($headingtype, font-family);
 	font-weight: 300;
 	text-transform: none;
+	font-style: italic;
 	//text-transform: capitalize !important;
 }
 

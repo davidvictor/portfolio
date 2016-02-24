@@ -33,23 +33,18 @@ vertical-menu {
 			@include p($spacing-micro, left);
 		}
 		a {
-			font-family:          $eames;
-			font-style:            italic;
-			font-weight:           map-get($bodytype, regular);
-			text-transform: uppercase;
-			line-height: 1;
-			span span {
-				font-weight: 700;
-				//@include roar-fontsize(1.2rem, all);
-			}
-			@include roar-fontsize('epsilon', all);
-			@include media('<=medium') {
-				font-size: 3rem !important;
-			}
-			span.line-break {
-				display: none;
-				@include breakpoint(medium) {
-					display: none;
+			span {
+				height: 1rem;
+				width: 100%;
+				display:             block;
+				position:            relative;
+				backface-visibility: hidden;
+				background-size:     contain;
+				background-position: left center;
+				background-repeat:   no-repeat;
+				background-image: url('../assets/images/base/davidvictor.svg');
+				@include media('<medium') {
+					height: 2.4rem;
 				}
 			}
 		}
