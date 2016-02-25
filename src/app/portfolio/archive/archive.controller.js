@@ -4,7 +4,7 @@ export class ArchiveController {
 		this.config = {
 			container: window,
 			initialZoomState: null,
-			imageSize: 'cover',
+			imageSize: 'contain',
 			fullScreen: false,
 			loop: false,
 			linkImages: true,
@@ -28,6 +28,76 @@ export class ArchiveController {
 
 		this.archives = [
 			{
+				id: 'lifeisbeautiful',
+				client: 'Life is Beautiful',
+				role: 'Branding / Web / Mobile / Print',
+				images: [
+					{
+						src: 'lib-11.jpg',
+						thumb: 'lib-11-sm.jpg'
+					},
+					{
+						src: 'lib-12.jpg'
+					},
+					{
+						src: 'lib-16.jpg'
+					},
+					{
+						src: 'lib-web.png'
+					},
+					{
+						src: 'lib-app-1.png'
+					},
+					{
+						src: 'lib-app-2.png'
+					},
+					{
+						src: 'lib-app-3.png'
+					},
+					{
+						src: 'lib-app-4.png'
+					},
+					{
+						src: 'lib-app-5.png'
+					},
+					{
+						src: 'lib-app-6.png'
+					},
+					{
+						src: 'lib-09.jpg'
+					},
+					{
+						src: 'lib-13.jpg'
+					},
+					{
+						src: 'lib-14.jpg'
+					},
+					{
+						src: 'lib-15.jpg'
+					},
+					{
+						src: 'lib-01.jpg'
+					},
+					{
+						src: 'lib-02.jpg'
+					},
+					{
+						src: 'lib-07.jpg'
+					}
+				]
+			},
+			//{
+			//	id: 'esc',
+			//	client: 'ESC Lab Sciences',
+			//	role: 'Web / Mobile / Print',
+			//	images: [
+			//		{
+			//			src: 'cherub.jpg',
+			//			thumb: 'cherub-sm.jpg'
+			//		}
+			//	]
+			//},
+			{
 				id: 'cherub',
 				client: 'Cherub',
 				role: 'Logo / Art Direction',
@@ -41,7 +111,7 @@ export class ArchiveController {
 			{
 				id: 'classic',
 				client: 'Classic Management',
-				role: 'Logo / Art Direction',
+				role: 'Branding / Print / Art Direction',
 				images: [
 					{
 						src: 'classic-alt.jpg',
@@ -54,35 +124,19 @@ export class ArchiveController {
 				]
 			},
 			{
-				id: 'feast',
-				client: 'Feast',
-				role: 'Logo / Branding',
+				id: 'medicineman',
+				client: 'The Medicine Man',
+				role: 'Branding / Web / Print',
 				images: [
 					{
-						src: 'feast.jpg',
-						thumb: 'feast-sm.jpg'
-					}
-				]
-			},
-			{
-				id: 'flexawn',
-				client: 'Flexawn',
-				role: 'Logo / Branding',
-				images: [
+						src: 'medicine-man.jpg',
+						thumb: 'medicine-man-sm.jpg'
+					},
 					{
-						src: 'flexawn.jpg',
-						thumb: 'flexawn-sm.jpg'
-					}
-				]
-			},
-			{
-				id: 'gro',
-				client: 'Gro Furniture',
-				role: 'Branding / Art Direction / Web',
-				images: [
+						src: 'medicine-man-full.jpg'
+					},
 					{
-						src: 'gro.jpg',
-						thumb: 'gro-sm.jpg'
+						src: 'medicine-man-brand.png'
 					}
 				]
 			},
@@ -102,24 +156,63 @@ export class ArchiveController {
 				]
 			},
 			{
-				id: 'mrcs',
-				client: 'MRCS Real Estate',
-				role: 'Logo / Branding',
+				id: 'feast',
+				client: 'Feast',
+				role: 'Branding / Web',
 				images: [
 					{
-						src: 'mcrs.jpg',
-						thumb: 'mcrs-sm.jpg'
+						src: 'feast.jpg',
+						thumb: 'feast-sm.jpg'
+					},
+					{
+						src: 'feast-print.jpg'
 					}
 				]
 			},
 			{
-				id: 'medicineman',
-				client: 'The Medicine Man',
-				role: 'Logo / Branding',
+				id: 'gro',
+				client: 'Gro Furniture',
+				role: 'Branding / Art Direction / Web',
 				images: [
 					{
-						src: 'medicine-man.jpg',
-						thumb: 'medicine-man-sm.jpg'
+						src: 'gro.jpg',
+						thumb: 'gro-sm.jpg'
+					},
+					{
+						src: 'gro-web.png'
+					},
+					{
+						src: 'gro-ipad-1.png'
+					},
+					{
+						src: 'gro-photo.jpg'
+					}
+				]
+			},
+
+			{
+				id: 'mrcs',
+				client: 'MRCS Real Estate',
+				role: 'Branding / Print',
+				images: [
+					{
+						src: 'mcrs.jpg',
+						thumb: 'mcrs-sm.jpg'
+					},
+					{
+						src: 'mcrs-full.jpg'
+					}
+				]
+			},
+
+			{
+				id: 'flexawn',
+				client: 'Flexawn',
+				role: 'Branding / Web',
+				images: [
+					{
+						src: 'flexawn.jpg',
+						thumb: 'flexawn-sm.jpg'
 					}
 				]
 			}

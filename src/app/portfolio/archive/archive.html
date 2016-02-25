@@ -3,9 +3,10 @@
 <div class="grid-block small-12 noscroll lax-item" ng-repeat="item in archive.archives track by $index">
 	<div class="grid-content noscroll lax-container" sm-scene="tween-{{item.id}}" duration="200%" offset="0" trigger-hook="1">
 		<div class="lax-wrapper" chocolat config="archive.config" instance="instance">
-			<a  class="chocolat-image {{item.id}}" href="assets/images/archive/{{photo.src}}" sm-tween="tween-{{item.id}}" vars="{y: '{{archive.tween}}',scale:1, force3D:true}" ng-repeat="photo in item.images track by $index">
+			<a ng-if="$first" class="chocolat-image {{item.id}}" href="assets/images/archive/{{photo.src}}" sm-tween="tween-{{item.id}}" vars="{y: '{{archive.tween}}',scale:1, force3D:true}" ng-repeat-start="photo in item.images track by $index">
 				<img ng-cloak ng-src="{{archive.imgPath + photo.thumb || '' }}" alt="" >
 			</a>
+			<a ng-if="!$first" class="chocolat-image {{item.id}}" href="assets/images/archive/{{photo.src}}"ng-repeat-end></a>
 		</div>
 		<div class="lax-deets grid-block nowrap" ng-cloak>
 			<div class="grid-block ">
