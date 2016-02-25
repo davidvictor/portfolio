@@ -46,22 +46,22 @@ export class ArchiveController {
 						src: 'lib-web.png'
 					},
 					{
-						src: 'lib-app-1.png'
+						src: 'lib-app-1.PNG'
 					},
 					{
-						src: 'lib-app-2.png'
+						src: 'lib-app-2.PNG'
 					},
 					{
-						src: 'lib-app-3.png'
+						src: 'lib-app-3.PNG'
 					},
 					{
-						src: 'lib-app-4.png'
+						src: 'lib-app-4.PNG'
 					},
 					{
-						src: 'lib-app-5.png'
+						src: 'lib-app-5.PNG'
 					},
 					{
-						src: 'lib-app-6.png'
+						src: 'lib-app-6.PNG'
 					},
 					{
 						src: 'lib-09.jpg'
